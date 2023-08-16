@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.btnArea {
+    text-align: center;
+    position: relative;
+}
+
+.btn {
+    color:$white;
+    border:1px solid;
+    background-color: $accent-color;
+    padding:1rem 2rem 1rem 1rem;
+    font-size: rem(14);
+    font-family: $second-font-family;
+    max-width: rem(206);
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    transition:.5s;
+    border: 1px solid #408F95;
+}
+.btn:hover{
+    background-color:$white;
+}
+.btn .btn__span:hover:before,
+.btn .btn__span:hover:after{
+    background-color: #408F95;
+}
+.btn:before{
+    border: 1px solid #408F95;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    right: -6.8rem;
+    top: 2rem;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+}
+.btn span:first-child{
+    position: relative;
+    padding-right:rem(80);
+}
+.btn__span{
+    padding-right:rem(6);
+    color:$white;
+    transition: .5s;
+}
+.btn__span:hover{
+    color:$accent-color;
+}
+.btn span:after{
+    content:'';
+    position:absolute;
+    width: 4rem;
+    height:1px;
+    top:50%;
+    right:0;
+    background-color:$white;
+    transform:translate(0,-50%);
+    display:inline-block;
+}
+.btn span:before{
+    content:'';
+    position:absolute;
+    width: .5rem;
+    height:1px;
+    top:32%;
+    right:-.1rem;
+    background-color:$white;
+    transform:translate(0,-50%) rotate(45deg);
+    display:inline-block;
+}
+
+.space {
+    padding-right: rem(.5);
+}
+

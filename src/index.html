@@ -18,6 +18,10 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
@@ -25,9 +29,123 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
+    <header class="header">
+      <div class="header__inner inner">
+          <div class="header__left">
+              <h1 class="header__title"><a href="#"><img src="./images/common/pc-img/top/CodeUps.png" alt="logo"></a></h1>
+          </div>
+         
 
+          <div class="header__right">
+              <ul class="header__items">
+                <li class="header__item"><a href="">Campaign<span>キャンペーン</span></a></li>
+                <li class="header__item"><a href="">About<span class="space">Us<span>私たちについて</span></a></li>
+                <li class="header__item"><a href="">Infomation<span>ダイビング情報</span></a></li>
+                <li class="header__item"><a href="">Blog<span>ブログ</span></a></li>
+                <li class="header__item"><a href="">Voice<span>お客様の声</span></a></li>
+                <li class="header__item"><a href="">Price<span>料金一覧</span></a></li>
+                <li class="header__item"><a href="">FAQ<span>よくある質問</span></a></li>
+                <li class="header__item"><a href="">Contact<span>お問合わせ</span></a></li>
+              </ul>
+          </div>
+      </div>
+    <div class="drawer">
+        <div class="drawer__btns">
+            <span class="drawer__btn1 btn"></span>
+            <span class="drawer__btn2 btn"></span>
+            <span class="drawer__btn3 btn"></span>
+        </div>
+    </div>
+    
+    <div class="drawer__content">
+        <ul class="drawer__menus">
+          
+            <li class="drawer-item"><a href="#">Campaign<span>キャンペーン</span></a></li>
+            
+            <li class="drawer-item"><a href="#">About<span class="space">Us<span>私たちについて</span></a></li>
+
+            <li class="drawer-item"><a href="#">Infomation<span>ダイビング情報</span></a></li>
+            
+            <li class="drawer-item"><a href="#">Blog<span>ブログ</span></a></li>
+            
+            <li class="drawer-item"><a href="#">Voice<span>お客様の声</span></a></li>
+
+            <li class="drawer-item"><a href="#">Price<span>FAQ<span>よくある質問</span></span></a></li>
+
+            <li class="drawer-item"><a href="#">Contact<span>お問合わせ</span></a></li>
+            
+            
+        </ul>
+    </div>
+    <div class="drawer-background"></div>
   </header>
+  <!-- ボタン -->
+  <div class="btnArea">
+    <a href="" class="btn"><span class="btn__span">View more</span></a>
+  </div>
+  <!-- ボタン完了 -->
+
+
+  <!-- カード -->
+  <div class="card">
+    <div class="card__inner">
+      <a class="card__wrapper" href="">
+        <article>
+          <figure>
+            <img width="300" height="200" loading="lazy" src="./assets/images/common/pc-img/blog/Rectangle01.jpg" alt="サンゴの画像">
+          </figure>
+          <div class="card__body">
+            <time   class="card__time" datetime="2023.01.02">2022.01.02</time>
+            <h3 class="card__title-sub">ライセンス取得</h3>
+            <p class="card__textArea">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+          </div>
+        </article>
+      </a>
+      <a class="card__wrapper" href="">
+        <article>
+          <figure>
+            <img width="300" height="200" loading="lazy" src="./assets/images/common/pc-img/blog/Rectangle01.jpg" alt="サンゴの画像">
+          </figure>
+          <div class="card__body">
+            <time   class="card__time" datetime="2023.01.02">2022.01.02</time>
+            <h3 class="card__title-sub">ライセンス取得</h3>
+            <p class="card__textArea">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+          </div>
+        </article>
+      </a>
+      <a class="card__wrapper" href="">
+        <article>
+          <figure>
+            <img width="300" height="200" loading="lazy" src="./assets/images/common/pc-img/blog/Rectangle01.jpg" alt="サンゴの画像">
+          </figure>
+          <div class="card__body">
+            <time   class="card__time" datetime="2023.01.02">2022.01.02</time>
+            <h3 class="card__title-sub">ライセンス取得</h3>
+            <p class="card__textArea">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+          </div>
+        </article>
+      </a>
+    </div>
+
+  </div>
+  <!-- カード完了 -->
+
+  <!-- voiceカード -->
+  <article class="card-wrapper">
+    <div class="card-wrapper__inner">
+      <div class="card-wrapper__body">
+        <p class="card-wrapper__info">20代(女性)</p>
+        <p class="card-wrapper__license">ライセンス講習</p>
+        <h3 class="card-wrapper__body-title">ここにタイトルが入ります。ここにタイトル</h3>
+        <figure>
+          <img width="150" height="118" loading="lazy" src="" alt="../dist/assets/images/common/sp-img/voice/voice-img1.webp">
+        </figure>
+
+
+      </div>
+    </div>
+  </article>
+  <!-- voiceカード完了 -->
   <main>
     <div class="inner">
       <p class="test">変更のテスト</p>
