@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.price {
+    margin-top: rem(80);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+}
+
+.acccent--backgroudColor {
+
+}
+
+.price__inner {
+
+}
+
+.price__bodyWrapper {
+    margin-top: rem(24);
+}
+
+.price__body{
+    margin-top: rem(40);
+}
+.price__imgArea {
+
+}
+
+.price__info {
+
+}
+
+.price__title {
+    font-weight: 700;
+    position: relative;
+    padding-bottom: rem(4);
+}
+
+.price__title:after{
+    content:'';
+    position:absolute;
+    bottom: 0;
+    left:0;
+    display:inline-block;
+    width: 100%;
+    height: rem(1);
+    background-color: $accent-color;
+}
+
+.price__title + .price__title{
+    margin-top: rem(40);
+}
+.price__text,
+.price__money{
+    display:inline-block;
+    font-size: rem(14);
+    margin-top: rem(8);
+}
+.price__text {
+  max-width: rem(253);
+    width: 100%;
+}
+
+.price__money {
+    max-width: rem(80);
+    width: 100%;
+    text-align: right;
+    
+}
+
+
+.price-btn{
+    margin-top: rem(40);
+}

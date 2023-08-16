@@ -8,14 +8,11 @@
 
 }
 
-
-
-.swiper {
-
-}
-
 .swiper__campaign {
     margin-top: rem(24);
+    overflow: hidden;
+    height: rem(400);
+    
 }
 
 .swiper-wrapper {

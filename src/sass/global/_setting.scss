@@ -7,7 +7,7 @@ $inner: 1100px;
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 20px;
+$padding-sp: 15px;
 
 ////////////////////
 // フォント設定
@@ -16,6 +16,7 @@ $padding-sp: 20px;
 $base-font-family: 'Noto Sans JP';
 $second-font-family:  'Gotu', sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
+
 
 body {
   font-family: $base-font-family;

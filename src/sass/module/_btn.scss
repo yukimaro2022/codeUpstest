@@ -18,17 +18,17 @@
     position: relative;
     text-align: left;
     transition:.5s;
-    border: 1px solid #408F95;
+    border: 1px solid $accent-color;
 }
 .btn:hover{
     background-color:$white;
 }
 .btn .btn__span:hover:before,
 .btn .btn__span:hover:after{
-    background-color: #408F95;
+    background-color: $accent-color;
 }
 .btn:before{
-    border: 1px solid #408F95;
+    border: 1px solid $accent-color;
     content: "";
     display: inline-block;
     height: 100%;
@@ -37,7 +37,7 @@
     top: 2rem;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: -1;
+  
 }
 .btn span:first-child{
     position: relative;
@@ -67,7 +67,7 @@
     position:absolute;
     width: .5rem;
     height:1px;
-    top:32%;
+    top:39%;
     right:-.1rem;
     background-color:$white;
     transform:translate(0,-50%) rotate(45deg);
