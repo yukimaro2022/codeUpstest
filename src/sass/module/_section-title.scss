@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.section__title-area {
+    text-align: center;
+}
+
+.section-title {
+    font-size: rem(32);
+    font-weight: 400;
+    font-family: $second-font-family;
+}
+
+.section-title__sub {
+    font-size: rem(12);
+    color: $accent-color;
+}

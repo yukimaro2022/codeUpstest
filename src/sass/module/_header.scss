@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.header {
+    height: rem(80);
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.header__inner {
+    padding:0 rem(15);
+    background: rgba(13, 41, 54, 0.68);
+    height:inherit;
+    transition: .5s;
+}
+
+.header__inner.is-active{
+    background-color:$accent-color;
+}
+
+.header__left {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:100%;
+}
+
+.header__title {
+    width: rem(102);
+    max-width: 100%;
+    height:rem(38);
+    max-height:100%;
+}
+
+.header__right {
+   display:none;
+}
+
+
+.header__items {
+
+}
+
+.header__item {
+
+}
+
+.space {
+
+}
+
+
+

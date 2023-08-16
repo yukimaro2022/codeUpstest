@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.icon{
+   position: relative;
+}
+.icon:before{
+    content:'';
+    background-image: url("../images/common/sp-img/icon/hitode.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top:50%;
+    left:rem(-25);
+    transform:translate(0,-50%);
+    display:inline-block;
+    width: rem(18);
+    height:rem(18);
+}
