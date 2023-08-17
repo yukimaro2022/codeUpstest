@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.number__section {
+    margin-top: rem(46);
+}
+
+.number__inner {
+
+}
+.number__imgArea{
+    text-align: right;
+}
+.number__img{
+  position: relative;
+}
+.number__img:before{
+    content:'';
+    position:absolute;
+    top:45%;
+    right:rem(-2);
+    transform:translate(-50%,-50%);
+    display:inline-block;
+    width: rem(28);
+    height: 100%;
+    background-image: url("../images/common/sp-img/contact/number.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.number-svg:before{
+    content: "";
+    width: rem(48);
+    height:rem(48);
+    background-color: $white;
+    border-radius: 50%;
+}
+

@@ -8,6 +8,7 @@
     font-size: rem(32);
     font-weight: 400;
     font-family: $second-font-family;
+    font-size: rem(40);
 }
 
 .section-title__sub {
@@ -16,4 +17,9 @@
 }
 .section__title--color{
     color:$accent-color;
+}
+
+.section-title__contact{
+    font-size: rem(80);
+    
 }

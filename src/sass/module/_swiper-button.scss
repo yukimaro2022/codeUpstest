@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.swiper-button__wrapper{
+    position: absolute;
+    top:0;
+    right: rem(180);
+    
+}
+
+.swiper-button-prev{
+    @include mq(md) {
+        background-image: url("../images/common/pc-img/top/button2.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: rem(80);
+        height: rem(80);
+        display:inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+   
+}
+
+.swiper-button-next{
+    @include mq(md) {
+        background-image: url("../images/common/pc-img/top/button1.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: rem(80);
+        height: rem(80);
+        display:inline-block;
+        position: absolute;
+        top: 0;
+        right0: 0;
+    }
+}

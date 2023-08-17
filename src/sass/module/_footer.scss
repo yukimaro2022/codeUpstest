@@ -1,0 +1,29 @@
+@use "global" as *;
+footer{
+   
+}
+.footer__inner{
+    background-color: $accent-color;
+    padding-top: rem(48);
+    padding-bottom: rem(58);
+}
+.footer__content{
+   display:flex;
+   flex-wrap: wrap;
+   grid-row-gap: 40px;
+   transition: .5s;
+   margin-top: rem(40);
+   column-gap: rem(16);
+}
+.footer__drawer-background.drawer-background.is-active{
+    position: unset;
+    visibility: visible;
+}
+
+.footer__sns{
+    margin-top: rem(16);
+}
+.footer__sns a:first-child{
+    margin-right:rem(16)
+}
+

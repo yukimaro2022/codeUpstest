@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.contact {
+    margin-top: rem(80);
+}
+
+.contact__inner {
+    text-align: center;
+    padding-bottom: rem(16);
+}
+
+.contact__logo{
+    position: relative;
+    padding-bottom: rem(8);
+}
+.contact__logo:after{
+    content:'';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $accent-color;
+    display:inline-block;
+    width: 100%;
+    height: rem(1);
+}
+.contact__logo img {
+    max-width: rem(174);
+    width: 100%;
+    margin: auto;
+}
+
+.contact__bodyWrapper {
+
+}
+
+.contact__body {
+    margin-top: rem(16);
+}
+
+.contact__info {
+
+}
+.contact__info dd{
+    margin-top: rem(4);
+}
+.contact-sapce {
+    max-width: rem(295);
+    height: rem(160);
+    background-color: #D9D9D9;
+    margin: auto;
+    margin-top: rem(16);
+}
+
+.contact__linkArea {
+    margin-top: rem(40);
+}
+
+
+.contact__btn {
+    margin-top: rem(40);
+}
+
+

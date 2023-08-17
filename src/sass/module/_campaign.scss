@@ -2,10 +2,17 @@
 
 .campaign {
     margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(120);
+    }
 }
 
-.campaign__inner {
-
+.campaign__inner.inner {
+    @include mq(md) {
+        margin-right: calc(50vw - 50%);
+        padding-right: 0;
+        position: relative;
+    }
 }
 
 .swiper__campaign {
@@ -20,13 +27,20 @@
 }
 
 .swiper-slide {
-
+    @include mq(md) {
+        flex-shrink: unset;
+    }
+    
 }
 
 .campaign__content {
     max-width: rem(280);
+    width: 100%;
     background: var(--white, #FFF);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    @include mq(md) {
+      max-width: rem(333);  
+    }
 }
 
 .swiper-card {
@@ -67,6 +81,9 @@
 .campaign__price-title {
     margin-top: rem(8);
     font-weight: 400;
+    @include mq(md) {
+        margin-top: rem(16);
+    }
 }
 
 .campaign__price-titleBig {
@@ -75,6 +92,9 @@
     font-weight: 700;
     margin-left: rem(18);
     font-family: 'Lato', sans-serif;
+    @include mq(md) {
+        font-size: rem(40);
+    }
 }
 .campaign__price-text{
     margin-top: rem(8);
@@ -87,11 +107,25 @@
 .campaign__price-textBorder:before{
     content:'';
     position:absolute;
-    top:50%;
+    top:60%;
     left:rem(50);
     transform:translate(-50%,0);
     display:inline-block;
     width: 30%;
-    height:rem(5);
+    height:rem(2);
     background-color: red;
+}
+
+.swiper-button__wrapper .swiper-button-prev,
+.swiper-button__wrapper .swiper-button-next{
+    width: rem(80);
+    height: rem(80);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    display: none;
+}
+.swiper-button-next{
+    margin-right: rem(80);
 }

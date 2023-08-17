@@ -36,10 +36,18 @@ jQuery(function(){
 jQuery(function(){
   const swiper = new Swiper('.swiper__campaign', {
     direction: 'horizontal',
-    slidesPerView: 1.2, // スマートフォンの画面幅に合わせて1.2枚分のスライドを表示
     loop: true,
-    autoplay: {
-      delay: 3000, // ミリ秒単位で自動再生の間隔を指定
+    spaceBetween: 24,
+    slidesPerView: 1.2, 
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        slidesPerView:3.6,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     spaceBetween: 24, // スライド間の隙間を20ピクセルに設定
   });

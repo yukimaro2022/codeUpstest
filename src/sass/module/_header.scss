@@ -5,11 +5,11 @@
     width: 100%;
     position: fixed;
     z-index: 99;
+    background: rgba(13, 41, 54, 0.68);
 }
 
 .header__inner {
     padding:0 rem(15);
-    background: rgba(13, 41, 54, 0.68);
     height:inherit;
     transition: .5s;
 }
