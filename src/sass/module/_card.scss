@@ -27,12 +27,14 @@
 }
 .card__body {
     margin-top: rem(24);
+    
 }
 
 .card__title-sub {
     font-weight: 500;
     position: relative;
-    padding-bottom:rem(4)
+    padding-bottom:rem(4);
+    font-size: rem(16);
 }
 .card__title-sub:after{
     content:'';
@@ -50,3 +52,40 @@
     margin-top: rem(16);
 }
 
+.card__article{
+    @include mq(md) {
+        display: flex;
+    }
+}
+.card__article figure{
+    @include mq(md) {
+        max-width: rem(540);
+        width: 100%;
+        margin-right: rem(48);
+    }
+    }
+   
+
+.card__info{
+    margin-top: rem(24);
+    @include mq(md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+}
+.card__bodys{
+    @include mq(md) {
+      display: flex; 
+      justify-content:space-between;
+      margin-top: rem(80);
+    }
+}
+.card__content{
+    margin-top: rem(24);
+}
+
+.card__content + .card__content{
+    margin-top: rem(40);
+}

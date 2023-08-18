@@ -4,11 +4,49 @@
     margin-top: rem(80);
 }
 
-.voice__inner {
 
+.voice__inner {
+    position: relative;
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(70);
+    }
 }
 
+.voice__inner:before{
+    content:'';
+    background-image: url("../images/common/pc-img/voice/voice-background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:0;
+    left: rem(-42);
+    display:inline-block;
+    max-width: rem(300);
+    height: rem(138);
+    width: 100%;
+}
 
-
+.voice__inner:after{
+    content:'';
+    background-image:url("../images/common/pc-img/background-img/voice-imge2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display:inline-block;  
+    width: rem(70);
+    max-width: 100%;
+    height: rem(162);    
+}
+.voicen-btn{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
 
 

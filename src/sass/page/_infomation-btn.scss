@@ -2,4 +2,7 @@
 
 .infomation-btn{
     margin-top: rem(40);
+    @include mq(md) {
+        margin-right: auto;
+    }
 }

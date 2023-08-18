@@ -2,6 +2,9 @@
 
 .contact {
     margin-top: rem(80);
+    @include mq(md) {
+        margin-top: rem(140);
+    }
 }
 
 .contact__inner {
@@ -10,14 +13,20 @@
 }
 
 .contact__logo{
+    
+}
+.contact__logo a{
+    position: relative;
     position: relative;
     padding-bottom: rem(8);
+    display: inline-block;
+    @include mq(md) {
+        width: 100%;
+    }
 }
-.contact__logo:after{
+.contact__logo a:after{
     content:'';
-    position:absolute;
-    bottom: 0;
-    left: 0;
+   
     background-color: $accent-color;
     display:inline-block;
     width: 100%;
@@ -28,13 +37,61 @@
     width: 100%;
     margin: auto;
 }
-
+.contact__wrapper{
+    position: relative;
+    @include mq(md) {
+        display: flex;
+        justify-content: center;
+        background: #FFF;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+}
+    
+.contact__wrapper:before{
+    content:'';
+    background-image: url("../images/common/pc-img/price/price-background.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top:0;
+    left: min(77vw,100%);
+    transform:translate(-50%,-50%);
+    display:inline-block;
+    max-width: rem(300);
+    width: 100%;
+    height: rem(140);
+}
 .contact__bodyWrapper {
-
+    position: relative;
+    @include mq(md) {
+        display: flex;
+        flex-direction: column;
+        max-width: rem(520);
+        width: 100%;
+        padding-right: rem(80);
+    }
+}
+.contact__bodyWrapper:after{
+        content:'';
+        position:absolute;
+        top:50%;
+        right: 0;
+        transform:translateY(-50%);
+        display:inline-block;
+        height: rem(255);
+        width: rem(1);
+        background-color: $accent-color;
 }
 
 .contact__body {
     margin-top: rem(16);
+    @include mq(md) {
+        display: flex;
+        margin-top: 0;
+    }
 }
 
 .contact__info {
@@ -42,17 +99,27 @@
 }
 .contact__info dd{
     margin-top: rem(4);
+    margin-right: rem(16);
 }
 .contact-sapce {
     max-width: rem(295);
+    width: 100%;
     height: rem(160);
     background-color: #D9D9D9;
     margin: auto;
     margin-top: rem(16);
+    @include mq(md) {
+        margin-top: rem(0);
+        max-width: rem(273);
+    }
 }
 
 .contact__linkArea {
     margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(0);
+        margin-left: rem(80);
+    }
 }
 
 

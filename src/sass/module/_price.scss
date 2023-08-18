@@ -4,6 +4,9 @@
     margin-top: rem(80);
     padding-top: rem(80);
     padding-bottom: rem(80);
+    @include mq(md) {
+        margin-top: rem(140);
+    }
 }
 
 .acccent--backgroudColor {
@@ -16,9 +19,20 @@
 
 .price__bodyWrapper {
     margin-top: rem(24);
+    @include mq(md) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: rem(40);
+    }
 }
-
 .price__body{
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.price__bodys + .price__bodys{
     margin-top: rem(40);
 }
 .price__imgArea {
@@ -26,7 +40,13 @@
 }
 
 .price__info {
-
+    margin-top: rem(40);
+    @include mq(md) {
+        max-width: rem(492);
+        width: 100%;
+        margin-right: rem(90);
+        margin-top: rem(0);
+    }
 }
 
 .price__title {
@@ -54,20 +74,29 @@
     display:inline-block;
     font-size: rem(14);
     margin-top: rem(8);
+    @include mq(md) {
+        font-size: rem(16);
+        
+    }
 }
 .price__text {
   max-width: rem(253);
     width: 100%;
+    @include mq(md) {
+        max-width: rem(300);
+    }
 }
 
 .price__money {
     max-width: rem(80);
     width: 100%;
     text-align: right;
-    
 }
 
 
 .price-btn{
     margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
 }

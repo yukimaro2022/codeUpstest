@@ -1,11 +1,24 @@
 @use "global" as *;
 footer{
-   
+    background-color: $accent-color;
 }
 .footer__inner{
-    background-color: $accent-color;
     padding-top: rem(48);
     padding-bottom: rem(58);
+}
+.footer__title{
+    width: rem(102);
+    max-width: 100%;
+    height:rem(38);
+    max-height:100%;
+    @include mq(md) {
+        max-width: rem(200);
+        width: 100%;
+        margin-right: rem(40);
+    }
+}
+.footer__title-wrapper{
+   display: flex;
 }
 .footer__content{
    display:flex;
@@ -14,6 +27,9 @@ footer{
    transition: .5s;
    margin-top: rem(40);
    column-gap: rem(16);
+   @include mq(md) {
+    column-gap: rem(120);
+   }
 }
 .footer__drawer-background.drawer-background.is-active{
     position: unset;
@@ -22,8 +38,15 @@ footer{
 
 .footer__sns{
     margin-top: rem(16);
+    @include mq(md) {
+        margin-top: rem(32);
+    }
 }
 .footer__sns a:first-child{
     margin-right:rem(16)
+}
+.footer__icon svg{
+    width: rem(32);
+    height: rem(32);
 }
 

@@ -3,7 +3,11 @@
 .about {
     margin-top: rem(80);
 }
-
+.about__inner{
+    @include mq(md) {
+       padding-bottom: rem(80); 
+    }
+}
 .about__body {
     margin-top: rem(40);
     
@@ -11,6 +15,21 @@
 
 .about__imgArea {
     position: relative;
+}
+.about__imgArea:after{
+    content:'';
+    background-image: url("../images/common/pc-img/about/about-backgrouund.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: rem(194);
+    height: rem(180);
+    display:inline-block;
+    bottom:-25%;
+    left: min(77vw,90%);
 }
 .about__textArea-wrapper{
     @include mq(md) {

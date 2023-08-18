@@ -42,7 +42,7 @@ jQuery(function(){
     breakpoints: {
       // when window width is >= 320px
       768: {
-        slidesPerView:3.6,
+        slidesPerView:3.2,
       },
     },
     navigation: {
