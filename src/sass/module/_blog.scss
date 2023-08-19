@@ -2,10 +2,10 @@
 
 .blog {
     margin-top: rem(80);
-    padding-top:rem(100);
     position: relative;
     @include mq(md) {
        margin-top: 0;
+       padding-top:rem(100);
     }
 }
 
@@ -27,11 +27,16 @@
 }
 
 .blog__body {
-    max-width: rem(333);
     width: 100%;
-    margin: auto;
     @include mq(md) {
         width: calc(33.3% - 40px * 2 / 3);
+    }
+}
+
+.blog__body + .blog__body{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: 0;
     }
 }
 

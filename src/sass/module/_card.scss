@@ -76,6 +76,7 @@
    
 }
 .card__bodys{
+    margin-top: rem(24);
     @include mq(md) {
       display: flex; 
       justify-content:space-between;

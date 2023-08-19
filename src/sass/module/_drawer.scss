@@ -8,6 +8,9 @@
     width: rem(32);
     height:rem(24);
     position: relative;
+    @include mq(md) {
+        display: none;
+    }
 }
 
 .drawer__btn1 {

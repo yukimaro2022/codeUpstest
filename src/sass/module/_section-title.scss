@@ -24,6 +24,8 @@
     
 }
 
-.section-title--color{
-    color:$white;
+.section-title--white{
+    @include mq(md) {
+        color: $white;
+    }
 }

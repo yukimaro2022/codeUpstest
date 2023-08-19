@@ -6,22 +6,11 @@
 }
 
 .btn {
-    color:$white;
-    border:1px solid;
-    background-color: $accent-color;
-    padding:1rem 2rem 1rem 1rem;
-    font-size: rem(14);
-    font-family: $second-font-family;
     max-width: rem(206);
     width: 100%;
     display: inline-block;
     position: relative;
-    text-align: left;
-    transition:.5s;
-    border: 1px solid $accent-color;
-}
-.btn:hover{
-    background-color:$white;
+    height: 100%;
 }
 .btn .btn__span:hover:before,
 .btn .btn__span:hover:after{
@@ -47,9 +36,21 @@
     padding-right:rem(6);
     color:$white;
     transition: .5s;
+    max-width: rem(206);
+    width: 100%;
+    padding:1rem 2rem 1rem 1rem;
+    font-size: rem(14);
+    font-family: $second-font-family;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    transition:.5s;
+    border: 1px solid $accent-color;
+    background-color: $accent-color;
 }
 .btn__span:hover{
     color:$accent-color;
+    background-color: $white;
 }
 .btn span:after{
     content:'';
@@ -57,7 +58,7 @@
     width: 4rem;
     height:1px;
     top:50%;
-    right:0;
+    right:rem(16);
     background-color:$white;
     transform:translate(0,-50%);
     display:inline-block;
@@ -67,8 +68,8 @@
     position:absolute;
     width: .5rem;
     height:1px;
-    top:39%;
-    right:-.1rem;
+    top:45%;
+    right:.9rem;
     background-color:$white;
     transform:translate(0,-50%) rotate(45deg);
     display:inline-block;

@@ -42,9 +42,9 @@
     font-size: rem(40);
     font-weight: 400;
     letter-spacing: .21em;
-    font-size: rem(80);
     @include mq(md) {
         letter-spacing: .54em;
+        font-size: rem(80);
     }
 }
 .swiper-slide__title-sub{
