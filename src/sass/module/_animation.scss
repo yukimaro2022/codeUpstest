@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.animation__image{
+    overflow: hidden;
+    position: relative;
+}
+.animation__image img.is-active{
+    transform: translateX(0);
+    transition: 3s;
+}
+
+.animation__image img{
+    opacity: 0;
+    position: relative;
+    z-index: 30;
+    transform: translateX(100%);
+}
+.color{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    display:inline-block;
+    width: 0%;
+    height: 100%;
+    background-color: #408F95;
+    
+}
+
+.color.is-active{
+    right:-100%;
+    z-index: 10;
+    width: 100%;
+}

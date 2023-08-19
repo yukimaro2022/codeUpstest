@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .js-fadeIn{
-    opacity: 0;
-    transform: translateX(-120%);
-    transition:opacity .8s,transform .8s;
+    // opacity: 0;
+    // transform: translateX(-120%);
+    // transition:opacity .8s,transform .8s;
 }
 .js-fadeIn .is-inview{
     opacity: 1;

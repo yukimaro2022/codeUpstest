@@ -27,13 +27,12 @@
   <!-- swiper -->
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
   
   
 
-  <script defer src="./assets/js/script.js"></script>
+  <!-- <script defer src="./assets/js/script.js"></script> -->
 </head>
 <body>
     <header class="header">
@@ -179,6 +178,24 @@
       </div>
     <div class="drawer-background"></div>
     </header>
+
+<!-- オープニング -->
+<div class="opening">
+  <div id="splash">
+    <div id="splash_logo">
+      <img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/img/loading.svg" alt="" class="fadeUp">
+    </div>
+  </div>
+
+  <main>
+    <div id="container">
+      <p>ローディング後、この画面が見えます。</p>
+      <!--/container-->
+    </div>
+  </main>
+</div>
+<!-- オープニング完了 -->
+
 
   <!-- top -->
   <div id="top" class="top">
@@ -379,7 +396,7 @@
     <div class="infomation__body">
       <div class="card" href="">
         <article class="card__article js-fadeIn">
-          <figure>
+          <figure class=" animation__image inview">
             <img width="345" height="227" loading="lazy" src="../assets/images/common/sp-img/infomation/infomation-sp.webp" alt="サンゴの画像">
           </figure>
           <div class="card__info">
@@ -478,7 +495,7 @@
               </div>
               <h3 class="card-wrapper__body-title">ここにタイトルが入ります。ここにタイトル</h3>
             </div>
-            <figure>
+            <figure class="animation__image inview">
               <img width="150" height="118" loading="lazy" src="../assets/images/common/sp-img/voice/voice-sp1.webp" alt="女性の画像">
             </figure>
           </div>
@@ -498,7 +515,7 @@
               </div>
               <h3 class="card-wrapper__body-title">ここにタイトルが入ります。ここにタイトル</h3>
             </div>
-            <figure>
+            <figure class="animation__image inview">
               <img width="150" height="118" loading="lazy" src="../assets/images/common/sp-img/voice/voice-sp2.webp" alt="女性の画像">
             </figure>
           </div>
@@ -524,7 +541,7 @@
     </div>
     <div class="price__bodyWrapper">
       <div class="price__imgArea">
-        <picture class="price__visual">
+        <picture class="price__visual animation__image inview">
           <source class="pc__img" srcset="../assets/images/common/pc-img/price/priceimg.webp" media="(min-width:1000px)" type="image/jpg">
           <img src="../assets/images/common/sp-img/price/price-sp1.webp" alt="海の中のイメージ">
         </picture>
@@ -798,9 +815,10 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js' integrity='sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==' crossorigin='anonymous'></script>
-  <script src="../assets/js/jquery.inview.min.js"></script>
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js' integrity='sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==' crossorigin='anonymous'></script> -->
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js' integrity='sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==' crossorigin='anonymous'></script> -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js' integrity='sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==' crossorigin='anonymous'></script> -->
+  <script src="../assets/js/jquery.inview.min.js"></script>
+  <script src="../assets/js/script.js"></script>
 </body>
 
 </html>

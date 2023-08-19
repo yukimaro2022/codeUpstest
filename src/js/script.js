@@ -1,6 +1,12 @@
 
+ 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
+  
+//logoの表示
+$(window).on('load',function(){
+  $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+});
     // ------------ドロワー --------------
 
 jQuery('.drawer__btns').on('click',function(){
@@ -99,10 +105,34 @@ jQuery('a[href^="#"]').click(function() {
   //     markers: true // マーカーを表示するかどうか（デバッグ用）
   //   },
   // });
-  
-    jQuery('.js-fadeIn').on('inview', function(event, isInView) {
-      if (isInView) {
-        jQuery(this).addClass('is-inview');
-      }
-    });
+
+//要素の取得とスピードの設定
+var box = $('.animation__image'),
+    speed = 700;  
+ 
+//.colorboxの付いた全ての要素に対して下記の処理を行う
+box.each(function(){
+    $(this).append('<div class="color"></div>')
+    var color = $(this).find($('.color')),
+    image = $(this).find('img');
+    var counter = 0;
+ 
+    image.css('opacity','0');
+    color.css('width','0%');
+    //inviewを使って背景色が画面に現れたら処理をする
+    color.on('inview', function(){
+      
+        if(counter == 0){
+　　　　　$(this).delay(100).animate({'width':'0%'},speed,function(){
+        $(this).css({'left':'auto' , 'right':'0'});
+        $(this).animate({'width':'100%'},speed);
+        $(this).addClass('is-active');
+        image.css('opacity','1').addClass('is-active');
+      })
+      counter = 1;
+    }
+    
+    
+  });
+});
   
