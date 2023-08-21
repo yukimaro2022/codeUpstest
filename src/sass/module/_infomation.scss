@@ -1,15 +1,15 @@
 @use "global" as *;
 .information {
-    margin-top: rem(80);
+    margin-top: rem(32);
     padding-top: rem(80);
-    padding-bottom: rem(80);
+    padding-bottom: rem(58);
     @include mq(md) {
         padding-bottom: rem(100);
     }
 }
 
 .infomation__body {
-    margin-top: rem(24);
+    margin-top: rem(28);
     @include mq(md) {
         margin-top: rem(40);
     }

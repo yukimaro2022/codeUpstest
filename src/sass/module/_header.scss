@@ -8,10 +8,11 @@
     background: rgba(13, 41, 54, 0.68);
 }
 
-.header__inner {
-    padding:0 rem(15);
+.header__inner.inner {
+    padding:0 rem(15) 0 rem(15);
     height:inherit;
     transition: .5s;
+
     @include mq(md) {
         display: flex;
         align-items: center;
@@ -35,7 +36,7 @@
 }
 
 .header__title {
-    width: rem(102);
+    width: rem(106);
     max-width: 100%;
     height:rem(38);
     max-height:100%;

@@ -36,12 +36,15 @@
     display:inline-block;
     color:$white;
     font-family: $second-font-family;
-    
+    text-align: center;
+    max-width: rem(248);
+    width: 100%;
+    line-height: calc(1.2);
 }
 .swiper-slide__title {
     font-size: rem(40);
     font-weight: 400;
-    letter-spacing: .21em;
+    letter-spacing: .52em;
     @include mq(md) {
         letter-spacing: .54em;
         font-size: rem(80);

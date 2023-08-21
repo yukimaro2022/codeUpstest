@@ -19,9 +19,9 @@
 }
 
 .swiper__campaign {
-    margin-top: rem(24);
+    margin-top: rem(26);
     overflow: hidden;
-    height: rem(500);
+    // height: rem(500);
     
 }
 
@@ -30,6 +30,8 @@
 }
 
 .swiper-slide {
+    // max-width: rem(280);
+    width: 100%;
     @include mq(md) {
         flex-shrink: unset;
         width: 100%;
@@ -49,28 +51,30 @@
 }
 
 .swiper-card {
+    max-width: rem(280);
+    width: 100%;
    @include mq(md) {
     max-width: rem(333);  
-    width: 100%;
    }
 }
 
 .campaign__body {
-    padding:rem(16)
+    padding:rem(18) rem(16)
 }
 
 .campaign__info {
     font-size: rem(12);
     color: $accent-color;
     border: 1px solid $accent-color;
-    padding: rem(8) rem(12);
+    padding: rem(5) rem(11);
 }
 
 .campaign__title {
-    margin-top: rem(8);
-    padding-bottom:rem(8);
+    margin-top: rem(10);
+    padding-bottom:rem(7);
     position: relative;
     font-weight: 500;
+    font-size: rem(16);
 }
 .campaign__title:after{
     content:'';
@@ -87,10 +91,12 @@
 }
 
 .campaign__price-title {
-    margin-top: rem(8);
+    margin-top: rem(10);
     font-weight: 400;
+    font-size: rem(14);
     @include mq(md) {
         margin-top: rem(16);
+        font-size: rem(16);
     }
 }
 
@@ -113,6 +119,7 @@
     position: relative;
     width: fit-content;
     margin: auto;
+    margin-left: rem(19);
 }
 .campaign__price-textBorder:before{
     content:'';

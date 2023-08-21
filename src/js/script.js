@@ -1,12 +1,24 @@
 
  
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+// jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
   
-//logoの表示
-$(window).on('load',function(){
-  $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-  $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-});
+// // logoの表示
+// $(window).on('load',function(){
+//   let windowWidth = $(window).width();
+//   // if (windowWidth >= 765) { 
+//     $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+   
+//     $('#splash_logo img').addClass('is-active');
+//     $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+//   $('html').addClass('scroll__lock');
+ 
+//   setTimeout(() => {
+//     $('html').removeClass('scroll__lock');
+//     $('.opening').addClass('fadeOut');
+//   }, "5000");
+//   // }// 例: PCサイズの幅が1024px以上と仮定
+  
+// });
     // ------------ドロワー --------------
 
 jQuery('.drawer__btns').on('click',function(){
@@ -27,15 +39,15 @@ jQuery('.drawer__btns').on('click',function(){
   jQuery('.header__inner').removeClass('is-active');
   jQuery('body').removeClass('scroll-lock');
   });
-});
+// });
 
 jQuery(function(){
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-    autoplay: {
-      delay: 3000, // ミリ秒単位で自動再生の間隔を指定
-    },
+    // autoplay: {
+    //   delay: 3000, // ミリ秒単位で自動再生の間隔を指定
+    // },
   });
 });
 

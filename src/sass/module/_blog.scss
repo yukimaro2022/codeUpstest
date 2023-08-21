@@ -8,7 +8,10 @@
        padding-top:rem(100);
     }
 }
-
+.blog__inner.inner{
+    padding-left: rem(21);
+    padding-right: rem(21);
+}
 .blog:before{
     @include mq(md) {
         content:'';
@@ -34,7 +37,7 @@
 }
 
 .blog__body + .blog__body{
-    margin-top: rem(40);
+    margin-top: rem(41.7);
     @include mq(md) {
         margin-top: 0;
     }

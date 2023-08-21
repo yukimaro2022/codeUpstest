@@ -9,7 +9,7 @@
     
 }
 .card-wrapper {
-    margin-top: rem(40);
+    margin-top: rem(45);
     background: var(--white, #FFF);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
     width: 100%;
@@ -17,6 +17,9 @@
         width: calc(50% - 40px * 1 / 2);
         margin: auto;
     }
+}
+.card-wrapper + .card-wrapper{
+    margin-top: rem(41);
 }
 
 .card-wrapper__inner {
@@ -29,6 +32,7 @@
 .card-wrapper__bodys {
     display: flex;
     overflow: hidden;
+    align-items: end;
 }
 .card-wrapper__body{
     margin-right: rem(13);
@@ -59,7 +63,7 @@
 }
 
 .card-wrapper__license {
-    padding: rem(2) rem(4);
+    padding: rem(4) rem(4);
     border: 1px solid $accent-color;
     color: $accent-color;
     text-align: center;
@@ -78,6 +82,7 @@
     position: relative;
     padding-bottom: rem(4);
     font-size: rem(16);
+    margin-top: rem(3);
         @include mq(md) {
             max-width: 100%;
             font-size: rem(24);
@@ -98,6 +103,6 @@
     
 }
 .card-wrapper__text {
-    line-height: calc(26 / 16);
+    line-height: 1.5;
     margin-top: rem(15);
 }

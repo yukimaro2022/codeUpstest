@@ -22,8 +22,8 @@
     display: inline-block;
     height: 100%;
     position: absolute;
-    right: -6.8rem;
-    top: 2rem;
+    right: -6.7rem;
+    top: 1.9rem;
     transform: translate(-50%, -50%);
     width: 100%;
   
@@ -36,9 +36,9 @@
     padding-right:rem(6);
     color:$white;
     transition: .5s;
-    max-width: rem(206);
+    max-width: rem(202);
     width: 100%;
-    padding:1rem 2rem 1rem 1rem;
+    padding:rem(16) 2rem 1rem rem(38);
     font-size: rem(14);
     font-family: $second-font-family;
     display: inline-block;
@@ -55,10 +55,10 @@
 .btn span:after{
     content:'';
     position:absolute;
-    width: 4rem;
+    width: rem(40);
     height:1px;
     top:50%;
-    right:rem(16);
+    right:rem(42);
     background-color:$white;
     transform:translate(0,-50%);
     display:inline-block;
@@ -69,7 +69,7 @@
     width: .5rem;
     height:1px;
     top:45%;
-    right:.9rem;
+    right:rem(42);
     background-color:$white;
     transform:translate(0,-50%) rotate(45deg);
     display:inline-block;
