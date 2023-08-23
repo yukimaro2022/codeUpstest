@@ -1,8 +1,8 @@
 
  
-// jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
   
-// // logoの表示
+  // // logoの表示
 // $(window).on('load',function(){
 //   let windowWidth = $(window).width();
 //   // if (windowWidth >= 765) { 
@@ -21,89 +21,89 @@
 // });
     // ------------ドロワー --------------
 
-jQuery('.drawer__btns').on('click',function(){
-    jQuery('.drawer__btns').toggleClass('is-active');
-    jQuery('.drawer__btns span').toggleClass('is-active');
-    jQuery('.drawer__content').toggleClass('is-active');
-    jQuery('.drawer-background').toggleClass('is-active');
-    jQuery('.header__inner').toggleClass('is-active');
+  jQuery('.drawer__btns').on('click',function(){
+      jQuery('.drawer__btns').toggleClass('is-active');
+      jQuery('.drawer__btns span').toggleClass('is-active');
+      jQuery('.drawer__content').toggleClass('is-active');
+      jQuery('.drawer-background').toggleClass('is-active');
+      jQuery('.header__inner').toggleClass('is-active');
 
-    jQuery('body').toggleClass('scroll-lock');
-  });
-  
-  jQuery('.drawer-item a').on('click',function(){
+      jQuery('body').toggleClass('scroll-lock');
+    });
     
-  jQuery('.drawer-btns , .drawer-btns span').removeClass('is-active');
-  jQuery('.drawer__content').removeClass('is-active');
-  jQuery('.drawer-background').removeClass('is-active');
-  jQuery('.header__inner').removeClass('is-active');
-  jQuery('body').removeClass('scroll-lock');
-  });
-// });
-
-jQuery(function(){
-  const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    // autoplay: {
-    //   delay: 3000, // ミリ秒単位で自動再生の間隔を指定
-    // },
-  });
-});
-
-jQuery(function(){
-  const swiper = new Swiper('.swiper__campaign', {
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 24,
-
-    breakpoints: {
-      // when window width is >= 320px
-      768: {
-        slidesPerView:3.2,
-      },
+    jQuery('.drawer-item a').on('click',function(){
       
-      600: {
-        slidesPerView:2,
-      },
-      375: {
-        slidesPerView:1.2,
-      },
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    spaceBetween: 24, // スライド間の隙間を20ピクセルに設定
+    jQuery('.drawer-btns , .drawer-btns span').removeClass('is-active');
+    jQuery('.drawer__content').removeClass('is-active');
+    jQuery('.drawer-background').removeClass('is-active');
+    jQuery('.header__inner').removeClass('is-active');
+    jQuery('body').removeClass('scroll-lock');
+    });
+  // });
+
+  jQuery(function(){
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      // autoplay: {
+      //   delay: 3000, // ミリ秒単位で自動再生の間隔を指定
+      // },
+    });
   });
-});
+
+  jQuery(function(){
+    const swiper = new Swiper('.swiper__campaign', {
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween: 40,
+
+      breakpoints: {
+        // when window width is >= 320px
+        768: {
+          slidesPerView:3.2,
+        },
+        
+        600: {
+          slidesPerView:2,
+        },
+        375: {
+          slidesPerView:1.2,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    
+    });
+  });
   
   // #から始まるURLがクリックされた時
-jQuery('a[href^="#"]').click(function() {
-  
-  // .headerクラスがついた要素の高さを取得
-  let header = jQuery("header").innerHeight();
-  //スクロールスピードを設定する
-  let speed = 300;
-  
-  //押した要素のhref属性を取得する
-  let id = jQuery(this).attr("href");
-  
-  //＃の値がidならばhtmlを設定　id属性ではなければidを設定する
-  let target = jQuery("#" == id ? "html" : id);
-  // トップからの距離からヘッダー分の高さを引く
-  
-  let position = jQuery(target).offset().top - header;
-  
-  // その分だけ移動すればヘッダーと被りません
-  jQuery("html, body").animate(
-    {
-      scrollTop: position
-    },
-    speed
-  );
-  return false;
-});
+  jQuery('a[href^="#"]').click(function() {
+    
+    // .headerクラスがついた要素の高さを取得
+    let header = jQuery("header").innerHeight();
+    //スクロールスピードを設定する
+    let speed = 300;
+    
+    //押した要素のhref属性を取得する
+    let id = jQuery(this).attr("href");
+    
+    //＃の値がidならばhtmlを設定　id属性ではなければidを設定する
+    let target = jQuery("#" == id ? "html" : id);
+    // トップからの距離からヘッダー分の高さを引く
+    
+    let position = jQuery(target).offset().top - header;
+    
+    // その分だけ移動すればヘッダーと被りません
+    jQuery("html, body").animate(
+      {
+        scrollTop: position
+      },
+      speed
+    );
+    return false;
+  });
 
 
   // let js__fade = document.querySelector('.card__article');
@@ -118,12 +118,12 @@ jQuery('a[href^="#"]').click(function() {
   //   },
   // });
 
-//要素の取得とスピードの設定
-var box = $('.animation__image'),
-    speed = 700;  
- 
-//.colorboxの付いた全ての要素に対して下記の処理を行う
-box.each(function(){
+  //要素の取得とスピードの設定
+  var box = $('.animation__image'),
+      speed = 700;  
+  
+  //.colorboxの付いた全ての要素に対して下記の処理を行う
+  box.each(function(){
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
     image = $(this).find('img');
@@ -147,4 +147,4 @@ box.each(function(){
     
   });
 });
-  
+});  

@@ -7,9 +7,13 @@
     }
 }
 
-.contact__inner {
+.contact__inner.inner {
     text-align: center;
-    padding-bottom: rem(16);
+    padding-bottom: rem(12);
+    @include mq(md) {
+        padding-left: rem(35);
+        padding-right: rem(35);
+    }
 }
 
 .contact__logo{
@@ -18,11 +22,12 @@
 .contact__logo a{
     position: relative;
     position: relative;
-    padding-bottom: rem(8);
+    padding-bottom: rem(9);
     display: inline-block;
     width: 100%;
     @include mq(md) {
         width: 100%;
+        padding-bottom: rem(11);
     }
 }
 .contact__logo a:after{
@@ -40,17 +45,21 @@
     max-width: rem(174);
     width: 100%;
     margin: auto;
+    @include mq(md) {
+        max-width: rem(200);
+    }
 }
 .contact__wrapper{
     position: relative;
     padding: 0 rem(25);
     @include mq(md) {
         display: flex;
-        justify-content: center;
         background: #FFF;
         box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
         padding-top: rem(80);
         padding-bottom: rem(80);
+        padding-left: rem(50);
+        padding-right:rem(50)
     }
 }
     
@@ -67,11 +76,14 @@
     display:inline-block;
     max-width: rem(140);
     width: 100%;
-    height: rem(140);
+    height: rem(136);
     @include mq(md) {
         background-image: url("../images/common/pc-img/price/price-background.webp");
         max-width: rem(300);
         width: 100%;
+        top: rem(34);
+        left: min(77vw, 98%);
+        height: rem(140);
     }
 }
 .contact__bodyWrapper {
@@ -80,9 +92,9 @@
     @include mq(md) {
         display: flex;
         flex-direction: column;
-        max-width: rem(520);
+        max-width: rem(522);
         width: 100%;
-        padding-right: rem(80);
+        padding-right: rem(82);
     }
 }
 .contact__bodyWrapper:after{
@@ -105,14 +117,15 @@
     margin-top: rem(16);
     @include mq(md) {
         display: flex;
-        margin-top: 0;
+        margin-top: rem(23);
+        text-align: left;
     }
 }
 
 .contact__info {
 
 }
-.contact__info dd{
+.contact__info dd:nth-child(n + 2){
     margin-top: rem(4);
 }
 .contact__info dd:first-child{
@@ -123,19 +136,25 @@
     width: 100%;
     height: rem(160);
     background-color: #D9D9D9;
-    margin: auto;
-    margin-top: rem(18);
+   
+    margin-top: rem(16);
     @include mq(md) {
         margin-top: rem(0);
         max-width: rem(273);
+        margin-left: auto;
+        height: rem(148);
     }
 }
 
 .contact__linkArea {
-    margin-top: rem(26);
+    margin-top: rem(45);
     @include mq(md) {
-        margin-top: rem(0);
+        margin-top: rem(16);
         margin-left: rem(80);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

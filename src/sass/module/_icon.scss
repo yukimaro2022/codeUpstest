@@ -17,3 +17,8 @@
     width: rem(18);
     height:rem(18);
 }
+
+.icon-positionTop:before{
+    top: 0;
+    transform: translateY(0);
+}

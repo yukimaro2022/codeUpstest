@@ -5,6 +5,8 @@
     padding-bottom: rem(58);
     @include mq(md) {
         padding-bottom: rem(100);
+        margin-top: rem(36);
+        padding-top: rem(94);
     }
 }
 
@@ -13,4 +15,8 @@
     @include mq(md) {
         margin-top: rem(40);
     }
+}
+.infomation__inner.inner{
+    padding-left: rem(35);
+    padding-right: rem(35);
 }

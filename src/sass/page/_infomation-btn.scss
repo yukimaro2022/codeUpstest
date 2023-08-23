@@ -3,6 +3,6 @@
 .infomation-btn{
     margin-top: rem(40);
     @include mq(md) {
-        text-align: left;
+        text-align: center;
     }
 }

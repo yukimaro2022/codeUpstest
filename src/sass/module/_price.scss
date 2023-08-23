@@ -3,9 +3,11 @@
 .price {
     margin-top: rem(82);
     padding-top: rem(80);
-    padding-bottom: rem(82);
+    padding-bottom: rem(80);
     @include mq(md) {
-        margin-top: rem(140);
+        margin-top: rem(70);
+        padding-top:rem(95);
+        padding-bottom: rem(100);
     }
 }
 
@@ -13,12 +15,13 @@
 
 }
 
-.price__inner {
-
+.price__inner.inner {
+    padding-right: rem(35);
+    padding-left: rem(35);
 }
 
 .price__bodyWrapper {
-    margin-top: rem(28);
+    margin-top: rem(36);
     @include mq(md) {
         display: flex;
         flex-direction: row-reverse;
@@ -33,13 +36,15 @@
     }
 }
 .price__bodys + .price__bodys{
-    margin-top: rem(42);
+    margin-top: rem(41);
 }
 .price__imgArea {
     overflow: hidden;
     
 }
-
+.price__visual img{
+    aspect-ratio: 492/732;
+}
 .price__info {
     margin-top: rem(40);
     @include mq(md) {
@@ -77,7 +82,7 @@
     margin-top: rem(10);
     @include mq(md) {
         font-size: rem(16);
-        
+        margin-top: rem(7.5);
     }
 }
 .price__text {
@@ -98,6 +103,6 @@
 .price-btn{
     margin-top: rem(40);
     @include mq(md) {
-        margin-top: rem(80);
+        margin-top: rem(83);
     }
 }

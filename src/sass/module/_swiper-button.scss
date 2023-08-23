@@ -4,6 +4,10 @@
     position: absolute;
     top:0;
     right: rem(180);
+    @include mq(md) {
+        top:rem(30);
+        right:rem(270)
+    }
     
 }
 
@@ -34,6 +38,6 @@
         display:inline-block;
         position: absolute;
         top: 0;
-        right0: 0;
+        right: 17px;
     }
 }

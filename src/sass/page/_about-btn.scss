@@ -1,4 +1,7 @@
 @use "global" as *;
 .about-btn{
     margin-top: rem(50);
+    @include mq(md) {
+        margin-top:rem(42);
+    }
 }

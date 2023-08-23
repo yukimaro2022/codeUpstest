@@ -3,6 +3,7 @@
 .section__title-area {
     text-align: center;
     line-height: 1.31;
+    position: relative;
 }
 
 .section-title {
@@ -18,12 +19,20 @@
     font-size: rem(12);
     color: $accent-color;
 }
+.section-title__link{
+    font-size: rem(14);
+    color: $accent-color;
+    // margin-top: rem(10);
+    display: inline-block;
+
+}
 .section__title--color{
     color:$accent-color;
 }
 
-.section-title__contact{
+.section-title__contact.section-title{
     font-size: rem(80);
+    line-height: .6;
     
 }
 
@@ -33,3 +42,10 @@
     }
 }
 
+.section__title-area--lineHeight{
+    line-height: 1.9;
+}
+
+.section-title__contact{
+    line-height:.7;
+}

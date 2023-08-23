@@ -260,11 +260,16 @@
 
   <!-- campaign -->
   <section id="campaign" class="campaign">
-    <div class="campaign__inner inner ">
-      <div class="section__title-area">
-        <h2 class="section-title"><span class="section__title--color">C</span>ampaign</h2>
-        <span class="section-title__sub">キャンペーン</span>
+    <div class="section__title-area">
+      <h2 class="section-title"><span class="section__title--color">C</span>ampaign</h2>
+      <span class="section-title__sub">キャンペーン</span>
+      <div class="swiper-button__wrapper">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
+    </div>
+    <div class="campaign__inner inner ">
       <!-- Slider main container -->
       <div class="swiper__campaign">
       <!-- Additional required wrapper -->
@@ -296,7 +301,7 @@
                 <h3 class="campaign__title">貸切体験ダイビング</h3>
                 <div class="campaign__price">
                   <h4 class="campaign__price-title">全部コミコミ(お一人様)</h4>
-                  <p class="campaign__price-text campaign__price-textBorder">￥24,000<span class="campaign__price-titleBig">￥18,000</span></p>
+                  <p class="campaign__price-text campaign__price-textBorder">¥24,000<span class="campaign__price-titleBig">¥18,000</span></p>
                 </div>
               </div>
             </article>
@@ -312,7 +317,7 @@
                 <h3 class="campaign__title">ナイトダイビング</h3>
                 <div class="campaign__price">
                   <h4 class="campaign__price-title">全部コミコミ(お一人様)</h4>
-                  <p class="campaign__price-text campaign__price-textBorder">￥10,000<span class="campaign__price-titleBig">￥88,000</span></p>
+                  <p class="campaign__price-text campaign__price-textBorder">¥10,000<span class="campaign__price-titleBig">¥8,000</span></p>
                 </div>
               </div>
             </article>
@@ -328,7 +333,7 @@
                 <h3 class="campaign__title">貸切ファンダイビング</h3>
                 <div class="campaign__price">
                   <h4 class="campaign__price-title">全部コミコミ(お一人様)</h4>
-                  <p class="campaign__price-text campaign__price-textBorder">￥20,000<span class="campaign__price-titleBig">￥16,000</span></p>
+                  <p class="campaign__price-text campaign__price-textBorder">¥20,000<span class="campaign__price-titleBig">¥16,000</span></p>
                 </div>
               </div>
             </article>
@@ -337,11 +342,7 @@
         </div>
         
       </div>
-      <div class="swiper-button__wrapper">
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
+      
     </div>
   </section>
   <!--  -->
@@ -376,7 +377,7 @@
         <div class="about__textArea-wrapper">
           <h3 class="about__textArea-wrapper__title">Dive into the Ocean</h3>
           <div class="about__textArea-wrapper__textArea">
-            <p class="about__textArea-wrapper__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br class="pc"> ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+            <p class="about__textArea-wrapper__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
           <!-- ボタン -->
           <div class="btnArea about-btn">
             <a href="#" class="btn"><span class="btn__span">View more</span></a>
@@ -657,17 +658,17 @@
       </div>
 
 
-    </div>
-    <div class="contact__linkArea">
-      <div class="section__title-area">
-        <h2 class="section-title section-title__contact"><span class="section__title--color">C</span>ontact</h2>
-        <p class="section-title__sub">お問い合わせ</p>
+      <div class="contact__linkArea">
+        <div class="section__title-area section__title-area--lineHeight">
+          <h2 class="section-title section-title__contact"><span class="section__title--color">C</span>ontact</h2>
+          <span class="section-title__sub">お問い合わせ</span>
+        </div>
         <a class="section-title__link" href="">ご予約・お問い合わせはコチラ</a>
-      </div>
-
-       <!-- ボタン -->
-      <div class="btnArea contact__btn">
-        <a href="" class="btn"><span class="btn__span">View more</span></a>
+  
+         <!-- ボタン -->
+        <div class="btnArea contact__btn">
+          <a href="" class="btn"><span class="btn__span">View more</span></a>
+        </div>
       </div>
     </div>
     <!-- ボタン完了 -->
@@ -706,14 +707,14 @@
       </div>
       <div class="footer__content">
         <ul class="drawer__menus">
-            <li class="drawer-item  icon drawe-item-topSpace">
+            <li class="drawer-item  icon">
               <a href="#">
                 キャンペーン
               </a>
             </li>
             <li class="drawer-item">
               <a href="#">
-                ライセンス
+                ライセンス取得
               </a>
             </li>
             <li class="drawer-item">
@@ -726,7 +727,7 @@
                 ナイトダイビング
               </a>
             </li>
-            <li class="drawer-item  drawe-item-topSpace">
+            <li class="drawer-item  icon drawer-item-topSpace">
               <a href="#">
                 <span class="icon">私たちについて</span>
               </a>
@@ -734,12 +735,12 @@
         </ul>
 
         <ul class="drawer__menus">
-          <li class="drawer-item icon drawe-item-topSpace">
+          <li class="drawer-item icon">
             <a href="#">
               お客様の声
             </a>
           </li>
-          <li class="drawer-item  icon drawe-item-topSpace">
+          <li class="drawer-item  icon drawer-item-topSpace">
             <a href="#">
               料金一覧
             </a>
@@ -764,7 +765,7 @@
         <ul class="drawer__menus">
           <li class="drawer-item icon drawer-item--topSpace">
             <a href="#">
-             ダイビング
+             ダイビング情報
             </a>
           </li>
           <li class="drawer-item">
@@ -782,7 +783,7 @@
               ファンダイビング
             </a>
           </li>
-          <li class="drawer-item  icon drawe-item-topSpace">
+          <li class="drawer-item  icon drawer-item-topSpace">
             <a href="#">
               ブログ
             </a>
@@ -790,22 +791,22 @@
       </ul>
         
         <ul class="drawer__menus">
-          <li class="drawer-item icon drawe-item-topSpace">
+          <li class="drawer-item icon">
             <a href="#">
               よくある質問
             </a>
           </li>
-          <li class="drawer-item icon drawe-item-topSpace">
+          <li class="drawer-item icon icon-positionTop drawer-item-topSpace">
             <a href="#">
               プライバシーポリシー
             </a>
           </li>
-          <li class="drawer-item icon drawe-item-topSpace">
+          <li class="drawer-item icon drawer-item-topSpace">
             <a href="#">
               利用規約
             </a>
           </li>
-          <li class="drawer-item icon drawe-item-topSpace">
+          <li class="drawer-item icon drawer-item-topSpace">
             <a href="#">
               お問い合わせ
             </a>

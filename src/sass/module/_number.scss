@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .number__section {
-    margin-top: rem(46);
+    margin-top: rem(38);
+    @include mq(md) {
+        margin-top: 60px;
+        margin-right: calc(50% - 48.8vw);
+    }
 }
 
 .number__inner {
@@ -26,6 +30,12 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+    @include mq(md) {
+       right: rem(14);
+       background-image:url("../images/common/pc-img/background-img/backgrounud-nuber.png");
+       background-size: contain;
+       height: rem(40);
+    }
 }
 
 .number-svg:before{
@@ -34,5 +44,13 @@
     height:rem(48);
     background-color: $white;
     border-radius: 50%;
+    @include mq(md) {
+        width: rem(80);
+        height: rem(80);
+    }
 }
 
+.number__img svg{
+    width: rem(80);
+    height: rem(80);
+}
