@@ -3,8 +3,8 @@
 .number__section {
     margin-top: rem(38);
     @include mq(md) {
-        margin-top: 60px;
-        margin-right: calc(50% - 48.8vw);
+        margin-right: calc(50% - 48.7vw);
+        margin-top: rem(52);
     }
 }
 
@@ -51,6 +51,10 @@
 }
 
 .number__img svg{
-    width: rem(80);
-    height: rem(80);
+    width: rem(48);
+    height: rem(48);
+    @include mq(md) {
+        width: rem(80);
+        height: rem(80);
+    }
 }

@@ -21,8 +21,9 @@
 .swiper__campaign {
     margin-top: rem(26);
     overflow: hidden;
+    height: rem(408);
     @include mq(md) {
-        height: rem(484);
+        height: rem(524);
         margin-top: rem(40);
     }
     
@@ -62,7 +63,7 @@
 }
 
 .campaign__body {
-    padding:rem(25) rem(16);
+    padding:rem(18) rem(16);
     @include mq(md) {
         padding: rem(26) rem(16);
     }

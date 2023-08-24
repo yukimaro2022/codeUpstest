@@ -22,12 +22,12 @@
 .contact__logo a{
     position: relative;
     position: relative;
-    padding-bottom: rem(9);
+    padding-bottom: rem(6);
     display: inline-block;
     width: 100%;
     @include mq(md) {
         width: 100%;
-        padding-bottom: rem(11);
+        padding-bottom: rem(13);
     }
 }
 .contact__logo a:after{
@@ -57,7 +57,7 @@
         background: #FFF;
         box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
         padding-top: rem(80);
-        padding-bottom: rem(80);
+        padding-bottom: rem(90);
         padding-left: rem(50);
         padding-right:rem(50)
     }
@@ -76,7 +76,7 @@
     display:inline-block;
     max-width: rem(140);
     width: 100%;
-    height: rem(136);
+    height: rem(50);
     @include mq(md) {
         background-image: url("../images/common/pc-img/price/price-background.webp");
         max-width: rem(300);
@@ -147,7 +147,8 @@
 }
 
 .contact__linkArea {
-    margin-top: rem(45);
+    margin-top: rem(56);
+
     @include mq(md) {
         margin-top: rem(16);
         margin-left: rem(80);
@@ -161,6 +162,10 @@
 
 .contact__btn {
     margin-top: rem(40);
+    @include mq(md) {
+        max-width: rem(200);
+        width: 100%;
+    }
 }
 
 

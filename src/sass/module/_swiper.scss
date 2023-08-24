@@ -34,8 +34,8 @@
 }
 .swiper-slide__title-body{
     position:absolute;
-    top:49.5%;
-    left:51.5%;
+    top:50%;
+    left:50%;
     transform:translate(-50%,-50%);
     display:inline-block;
     color:$white;
@@ -43,11 +43,12 @@
     text-align: center;
     max-width: rem(248);
     width: 100%;
-    line-height: calc(1.2);
+    line-height: calc(1.5);
     @include mq(md) {
         max-width: 100%;
         line-height: 1.4;
         top: 55%;
+        left: 51.5%;
     }
 }
 .swiper-slide__title {

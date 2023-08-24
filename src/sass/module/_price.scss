@@ -3,11 +3,11 @@
 .price {
     margin-top: rem(82);
     padding-top: rem(80);
-    padding-bottom: rem(80);
+    
     @include mq(md) {
         margin-top: rem(70);
         padding-top:rem(95);
-        padding-bottom: rem(100);
+       
     }
 }
 
@@ -16,12 +16,35 @@
 }
 
 .price__inner.inner {
-    padding-right: rem(35);
-    padding-left: rem(35);
+        padding-right: rem(15);
+        padding-left: rem(15);
+        position: relative;
+        padding-bottom: rem(84);
+    @include mq(md) {
+        padding-right: rem(35);
+        padding-left: rem(35);
+         padding-bottom: rem(100);
+    }
 }
-
+.price__inner:before{
+    @include mq(md) {
+        content:'';
+        background-image: url("../images/common/pc-img/background-img/price-background.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        max-width: rem(438);
+        position:absolute;
+        bottom: rem(60);
+        left:rem(-50);
+        height: rem(200);
+        transform:translateY(-50);
+        display:inline-block;
+    }
+}
 .price__bodyWrapper {
-    margin-top: rem(36);
+    margin-top: rem(28);
     @include mq(md) {
         display: flex;
         flex-direction: row-reverse;
@@ -36,14 +59,18 @@
     }
 }
 .price__bodys + .price__bodys{
-    margin-top: rem(41);
+    margin-top: rem(42);
 }
 .price__imgArea {
     overflow: hidden;
     
 }
 .price__visual img{
-    aspect-ratio: 492/732;
+    width: 100%;
+    @include mq(md) {
+        aspect-ratio: 492/732; 
+    }
+   
 }
 .price__info {
     margin-top: rem(40);

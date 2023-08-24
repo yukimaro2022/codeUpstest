@@ -33,7 +33,7 @@
 .section-title__contact.section-title{
     font-size: rem(80);
     line-height: .6;
-    
+    margin-left: rem(-10);
 }
 
 .section-title--white{
@@ -44,6 +44,9 @@
 
 .section__title-area--lineHeight{
     line-height: 1.9;
+    @include mq(md) {
+        margin-left: rem(12);
+    }
 }
 
 .section-title__contact{
