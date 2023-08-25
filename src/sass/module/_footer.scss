@@ -36,20 +36,43 @@ footer{
    grid-row-gap: rem(34);
    transition: .5s;
    margin-top: rem(32);
-   column-gap: rem(18);
+   column-gap: unset;
    @include mq(md) {
-    column-gap: rem(120);
-    margin-top: rem(22);
+    // column-gap: rem(120);
+    column-gap: calc(116 / 1050 * 100%);
+    margin-top: rem(20);
+    
    }
 }
 .footer__content .drawer__menus:nth-child(2){
+    margin-left: rem(16);
     @include mq(md) {
        order: 2; 
+       margin-left: 0;
+    }
+}
+.footer__content .drawer__menus:nth-child(3){
+    margin-right: rem(34);
+    @include mq(md) {
+       margin-right: 0;
     }
 }
 .footer__content .drawer__menus:nth-child(4){
     @include mq(md) {
        order: 3; 
+    }
+}
+
+// .drawer__menus:nth-child(2n){
+//     margin-left: rem(18);
+//     @include mq(md) {
+//         margin-left: 0;
+//     }
+// }
+.drawer__menus:last-child{
+    @include mq(md) {
+        max-width: rem(200);
+        width: 100%;
     }
 }
 .footer__drawer-background.drawer-background.is-active{

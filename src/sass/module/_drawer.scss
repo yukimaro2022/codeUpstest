@@ -30,7 +30,7 @@
     left: 0;
 }
 .drawer__btn1.is-active{
-    transform:rotate(45deg);
+    transform:rotate(38deg);
     top:50%;
 }
 .drawer__btn2 {
@@ -45,7 +45,7 @@
     left:0;
 }
 .drawer__btn3.is-active{
-    transform:rotate(-45deg);
+    transform:rotate(-38deg);
     top: 50%;
 }
 .drawer__content {
@@ -75,23 +75,18 @@
 .drawer-item{
         padding-left: rem(22); 
 }
-.drawer-item__privacy{
-    @include mq(md) {
-        white-space:nowrap;
-    }
+.drawer-item:hover{
+    opacity: .5;
 }
+
 
 .drawer__menus:last-child{
     max-width: rem(128);
     width: 100%;
-    margin-left: rem(16);
-    @include mq(md) {
-        margin-left: 0;
-    }
 }
 .drawer-item a{
     display: inline-block;
-    
+    font-weight: 700;
 }
 .drawer-item a span{
     display: inline-block;

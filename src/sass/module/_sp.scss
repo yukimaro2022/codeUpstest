@@ -1,0 +1,6 @@
+@use "global" as *;
+.sp{
+    @include mq(md) {
+        display: none;
+    }
+}

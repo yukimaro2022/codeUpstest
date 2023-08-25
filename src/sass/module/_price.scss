@@ -67,11 +67,13 @@
 }
 .price__visual img{
     width: 100%;
+    aspect-ratio: 345/227;
     @include mq(md) {
-        aspect-ratio: 492/732; 
+        aspect-ratio: 492/734; 
     }
    
 }
+
 .price__info {
     margin-top: rem(40);
     @include mq(md) {
@@ -86,6 +88,7 @@
     font-weight: 700;
     position: relative;
     padding-bottom: rem(4);
+    font-size: rem(16);
 }
 
 .price__title:after{

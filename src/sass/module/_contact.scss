@@ -117,7 +117,7 @@
     margin-top: rem(16);
     @include mq(md) {
         display: flex;
-        margin-top: rem(23);
+        margin-top: rem(22);
         text-align: left;
     }
 }
@@ -125,10 +125,10 @@
 .contact__info {
 
 }
-.contact__info dd:nth-child(n + 2){
+.contact__info p:nth-child(n + 2){
     margin-top: rem(4);
 }
-.contact__info dd:first-child{
+.contact__info p:first-child{
     margin-right: rem(8);
 }
 .contact-sapce {

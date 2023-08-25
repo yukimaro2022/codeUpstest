@@ -53,7 +53,9 @@
       width: 100%;
     }
 }
-
+.campaign__content figure img{
+    aspect-ratio: 280/188;
+}
 .swiper-card {
     max-width: rem(280);
     width: 100%;
@@ -131,6 +133,7 @@
     margin-top: rem(8);
     font-size: rem(20);
     font-family: 'Lato', sans-serif;
+    font-weight: 700;
 }
 .campaign__price-textBorder{
     position: relative;
