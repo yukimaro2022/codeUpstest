@@ -105,9 +105,13 @@ a:hover{
 }
 
 .opening{
-  opacity: 1;
-  visibility: visible;
-  transition: 5s;
+ opacity: 0;
+ visibility: hidden;
+ display: none;
+}
+.opening.is-active{
+ opacity: 1;
+ visibility: visible;
 }
 .opening.off{
     display: none;

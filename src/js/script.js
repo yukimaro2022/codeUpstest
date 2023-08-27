@@ -6,8 +6,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 $(window).on('load',function(){
   let windowWidth = $(window).width();
   if (windowWidth >= 765) { 
+    
+    $('.opening').addClass('is-active')
     $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-   
+    
     $('#splash_logo img').addClass('is-active');
     $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
   $('html').addClass('scroll__lock');
@@ -18,7 +20,7 @@ $(window).on('load',function(){
   }, "5000");
   }else{
     $("#splash").addClass('off');
-    $(".opening").addClass('off')
+    $(".opening").addClass('off');
   }// 例: PCサイズの幅が1024px以上と仮定
   
 });
