@@ -16,6 +16,23 @@
         padding-right: rem(35); 
     }
 }
+.blog:after{
+    @include mq(md) {
+        content:'';
+        background-image:url("../images/common/pc-img/background-img/blog-background2.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:absolute;
+        top:rem(24);
+        left:rem(100);
+        display:inline-block;
+        width: rem(376);
+        max-width: 100%;
+        height: rem(120);
+        z-index: 0;
+    }
+}
 .blog:before{
     @include mq(md) {
         content:'';

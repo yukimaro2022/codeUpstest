@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     position:absolute;
     top:rem(22);
-    left: rem(-42);
+    left:max(rem(-100),rem(0));
     display:inline-block;
     max-width: rem(300);
     height: rem(138);

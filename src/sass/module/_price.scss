@@ -37,7 +37,7 @@
         max-width: rem(438);
         position:absolute;
         bottom: rem(60);
-        left:rem(-50);
+        left:max(rem(-50),rem(.5));
         height: rem(200);
         transform:translateY(-50);
         display:inline-block;
