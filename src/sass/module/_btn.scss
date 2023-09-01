@@ -16,18 +16,15 @@
         width: 100%;
     }
 }
-.btn .btn__span:hover:before,
-.btn .btn__span:hover:after{
-    background-color: $accent-color;
-}
+
 .btn:before{
     border: 1px solid $accent-color;
     content: "";
     display: inline-block;
     height: 100%;
     position: absolute;
-    right: rem(-4);
-    top: rem(4);
+    right: rem(-6);
+    top: rem(3);
     width: 100%;
   
 }
@@ -39,8 +36,6 @@
     padding-right:rem(6);
     color:$white;
     transition: .5s;
-    max-width: rem(202);
-    width: 100%;
     padding:rem(16) 2rem 1rem rem(38);
     font-size: rem(14);
     font-family: $second-font-family;
@@ -50,34 +45,58 @@
     transition:.5s;
     border: 1px solid $accent-color;
     background-color: $accent-color;
+    z-index: 10;
+    overflow: hidden;
+    width: 100%;
 }
 .btn__span:hover{
-    color:$accent-color;
     background-color: $white;
+    color:$accent-color;
 }
 .btn span:after{
     content:'';
     position:absolute;
-    width: rem(40);
-    height:1px;
-    top:50%;
-    right:rem(42);
-    background-color:$white;
-    transform:translate(0,-50%);
+    width: 100%;
+    height:rem(55);
+    top:0;
+    left: 0;
     display:inline-block;
+    transform: translateX(-100%);
+    background-color: $white;
+    z-index: -1;
+    transition: .5s;
 }
 .btn span:before{
     content:'';
+    background-image: url("../images/common/pc-img/btn/btn-arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     position:absolute;
-    width: .5rem;
-    height:1px;
+    width: rem(40);
+    height:rem(6);
     top:45%;
-    right:rem(42);
-    background-color:$white;
-    transform:translate(0,-50%) rotate(45deg);
+    right:rem(30);
+    transform:translate(0,-50%);
     display:inline-block;
 }
-
+.btn span:hover:after{
+    transform: translateX(0);
+}
+.btn span:hover:before{
+    background-image: url("../images/common/pc-img/btn/btn-arrow-green.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:absolute;
+    width: rem(40);
+    height:rem(6);
+    top:45%;
+    right:rem(42);
+    transform:translate(0,-50%);
+    display:inline-block;
+    z-index: 10;
+}
 .space {
     padding-right: rem(.5);
 }

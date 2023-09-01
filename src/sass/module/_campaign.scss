@@ -2,39 +2,28 @@
 
 .campaign {
     margin-top: rem(40);
+    overflow: hidden;
     @include mq(md) {
         margin-top: rem(114);
     }
 }
 
 .campaign__inner.inner {
-    @include mq(md) {
-        margin-right: calc(50vw - 50%);
-        padding-right: 0;
-        position: relative;
-        max-width: rem(1284);
-        width: 100%;
-        margin-right: 0;
-    }
+    padding-left: rem8180;
 }
 
 .swiper__campaign {
     margin-top: rem(26);
+    padding-bottom: rem(40);
     overflow: hidden;
-    height: rem(408);
     @include mq(md) {
-        height: rem(524);
         margin-top: rem(40);
     }
     
 }
 
-.swiper-wrapper {
-
-}
-
 .swiper-slide {
-    // max-width: rem(280);
+    height: auto;
     width: 100%;
     @include mq(md) {
         flex-shrink: unset;
@@ -46,6 +35,7 @@
 .campaign__content {
     // max-width: rem(280);
     width: 100%;
+    height: 100%;
     background: var(--white, #FFF);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
     @include mq(md) {
@@ -56,21 +46,14 @@
 .campaign__content figure img{
     aspect-ratio: 280/188;
 }
-.swiper-card {
-    max-width: rem(280);
-    width: 100%;
-   @include mq(md) {
-    max-width: rem(333);  
-   }
-}
-.swiper-card:hover{
-    opacity: .7;
-    cursor: pointer;
-}
+
 .campaign__body {
     padding:rem(18) rem(16);
+    display: flex;
+    flex-direction: column;
     @include mq(md) {
         padding: rem(26) rem(16);
+        
     }
     
 }
@@ -80,7 +63,7 @@
     color: $accent-color;
     border: 1px solid $accent-color;
     padding: rem(5) rem(11);
-
+    width: fit-content;
     @include mq(md) {
         padding: rem(7) rem(14);
     }
@@ -142,7 +125,6 @@
     position: relative;
     width: fit-content;
     margin: auto;
-    margin-left: rem(19);
     @include mq(md) {
         font-size: rem(24);
         line-height: 1.4;

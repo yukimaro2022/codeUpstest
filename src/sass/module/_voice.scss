@@ -8,13 +8,13 @@
 }
 
 
-.voice__inner {
+.voice__inner.inner {
     position: relative;
     @include mq(md) {
         padding-top: rem(134);
         padding-bottom: rem(70);
-        padding-left: rem(15);
-        padding-right: rem(15);
+        padding-left: rem(25);
+        padding-right: rem(25);
     }
 }
 

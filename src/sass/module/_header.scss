@@ -126,6 +126,7 @@
 .header__drawer-content{
     column-gap:rem(6);
     top: rem(66);
+    grid-row-gap: 0;
     @include mq(md) {
         grid-row-gap:rem(36);
     }

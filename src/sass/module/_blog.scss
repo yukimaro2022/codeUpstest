@@ -12,8 +12,8 @@
     padding-left: rem(21);
     padding-right: rem(21);
     @include mq(md) {
-        padding-left: rem(35);
-        padding-right: rem(35); 
+        padding-left: rem(25);
+        padding-right: rem(25); 
     }
 }
 .blog:after{
@@ -53,15 +53,23 @@
 .blog__body {
     width: 100%;
     @include mq(md) {
-        width: calc(33.3% - 40px * 2 / 3);
+        width: calc(33.3% - rem(40) * 2 / 3);
+        margin-right: rem(40);
     }
 }
-
-.blog__body + .blog__body{
-    margin-top: rem(38);
+.blog__body:nth-child(3n){
+    margin-right:0;
+}
+.blog__body:nth-child(n + 4){
     @include mq(md) {
-        margin-top: 0;
+        margin-top: rem(40);
     }
 }
+// .blog__body + .blog__body{
+//     margin-top: rem(38);
+//     @include mq(md) {
+//         margin-top: 0;
+//     }
+// }
 
 

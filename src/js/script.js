@@ -59,8 +59,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   jQuery(function(){
     const swiper = new Swiper('.swiper__campaign', {
       direction: 'horizontal',
+      
       spaceBetween: 40,
-
       breakpoints: {
         // when window width is >= 320px
         768: {
