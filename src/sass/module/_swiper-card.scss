@@ -1,12 +1,8 @@
 @use "global" as *;
 
 .swiper-card {
-    max-width: rem(280);
     width: 100%;
     height: 100%;
-   @include mq(md) {
-    max-width: rem(333);  
-   }
 }
 .swiper-card:hover{
     opacity: .7;

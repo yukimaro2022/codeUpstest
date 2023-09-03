@@ -13,8 +13,6 @@
     @include mq(md) {
         padding-top: rem(134);
         padding-bottom: rem(70);
-        padding-left: rem(25);
-        padding-right: rem(25);
     }
 }
 
@@ -26,7 +24,7 @@
     background-repeat: no-repeat;
     position:absolute;
     top:rem(22);
-    left:max(rem(-100),rem(0));
+    left:calc(50% - min(50vw , rem(620)));
     display:inline-block;
     max-width: rem(300);
     height: rem(138);
@@ -45,7 +43,7 @@
     background-size: cover;
     position:absolute;
     bottom: 0;
-    right: rem(36);
+    right: rem(24);
     display:inline-block;  
     width: rem(70);
     max-width: 100%;

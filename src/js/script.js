@@ -1,29 +1,28 @@
 
  
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-  
-  // // logoの表示
-// $(window).on('load',function(){
-//   let windowWidth = $(window).width();
-//   if (windowWidth >= 765) { 
-    
-//     $('.opening').addClass('is-active')
-//     $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    
-//     $('#splash_logo img').addClass('is-active');
-//     $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-//   $('html').addClass('scroll__lock');
  
-//   setTimeout(() => {
-//     $('html').removeClass('scroll__lock');
-//     $('.opening').addClass('fadeOut');
-//   }, "5000");
-//   }else{
-//     $("#splash").addClass('off');
-//     $(".opening").addClass('off');
-//   }// 例: PCサイズの幅が1024px以上と仮定
-  
-// });
+  // logoの表示
+$(window).on('load',function(){
+  let windowWidth = $(window).width();
+  if (windowWidth >= 765) { 
+    $('.opening').addClass('is-active')
+    $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+    
+    $('#splash_logo img').addClass('is-active');
+    $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+  $('html').addClass('scroll__lock');
+ 
+  setTimeout(() => {
+    $('html').removeClass('scroll__lock');
+    $('.opening').addClass('fadeOut');
+  }, "5000");
+  }else{
+    $("#splash").addClass('off');
+    $(".opening").addClass('off');
+  }// 例: PCサイズの幅が1024px以上と仮定
+});
+});
     // ------------ドロワー --------------
 
   jQuery('.drawer__btns').on('click',function(){
@@ -59,20 +58,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   jQuery(function(){
     const swiper = new Swiper('.swiper__campaign', {
       direction: 'horizontal',
-      
       spaceBetween: 40,
       breakpoints: {
         // when window width is >= 320px
-        768: {
-          slidesPerView:3.2,
-        },
         
-        600: {
-          slidesPerView:2,
+        768: {
+          slidesPerView:3,
         },
-        375: {
+        480:{
+          slidesPerView:1.8,
+        },
+        375:{
           slidesPerView:1.2,
-        },
+        }
       },
       navigation: {
         nextEl: ".swiper-button-next",
@@ -151,4 +149,4 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     
   });
 });
-});  
+
