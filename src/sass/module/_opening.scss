@@ -107,6 +107,8 @@ a:hover{
 .opening{
  opacity: 0;
  visibility: hidden;
+ width: 0;
+ height: 0;
 }
 .opening.is-active{
  opacity: 1;

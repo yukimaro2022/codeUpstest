@@ -35,7 +35,7 @@
         max-width: rem(438);
         position:absolute;
         bottom: rem(60);
-        right: calc(50% - min(-6vw - 25px));
+        left: calc(50% - min(50vw , 650px));
         height: rem(200);
         transform:translateY(-50);
         display:inline-block;

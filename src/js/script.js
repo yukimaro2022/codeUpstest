@@ -3,26 +3,50 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
  
   // logoの表示
-$(window).on('load',function(){
-  let windowWidth = $(window).width();
-  if (windowWidth >= 765) { 
-    $('.opening').addClass('is-active')
-    $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    
-    $('#splash_logo img').addClass('is-active');
-    $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-  $('html').addClass('scroll__lock');
  
-  setTimeout(() => {
-    $('html').removeClass('scroll__lock');
-    $('.opening').addClass('fadeOut');
-  }, "5000");
-  }else{
+  $(window).on('load',function(){
+    let windowWidth = $(window).width();
+    if (windowWidth >= 765) { 
+      $('.opening').addClass('is-active')
+      $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+      
+      $('#splash_logo img').addClass('is-active');
+      $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+      $('html').addClass('scroll__lock');
+      
+      setTimeout(() => {
+        $('html').removeClass('scroll__lock');
+        $('.opening').addClass('fadeOut');
+      }, "5000");
+    }else{
     $("#splash").addClass('off');
     $(".opening").addClass('off');
   }// 例: PCサイズの幅が1024px以上と仮定
 });
 });
+ // Cookieを設定する関数
+ function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+// Cookieを取得する関数
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
     // ------------ドロワー --------------
 
   jQuery('.drawer__btns').on('click',function(){

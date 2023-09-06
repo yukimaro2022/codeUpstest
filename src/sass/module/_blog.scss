@@ -56,9 +56,13 @@
     @include mq(md) {
         width: calc(33.3% - rem(40) * 2 / 3);
         margin-right: rem(40);
+        transition: .5s;
     }
 }
 
+.blog__body:hover{
+    opacity: .8;
+}
 .blog__body:nth-child(3n){
     margin-right:0;
 }
