@@ -7,7 +7,7 @@
 
 .swiper-wrapper {
     width: 100%;
-   
+    height: auto;
 }
 
 .swiper-slide {
@@ -40,20 +40,15 @@
     color:$white;
     font-family: $second-font-family;
     text-align: center;
-    max-width: rem(248);
-    width: 100%;
-    line-height: calc(1.5);
-    @include mq(md) {
-       font-size: rem(80);
-       max-width: 100%;
-       line-height: calc(.5);
-    }
+    z-index: 9;
+   
 }
 .swiper-slide__title {
     font-size: rem(40);
     font-weight: 400;
     letter-spacing: .52em;
     font-family: $top-font-family;
+    text-indent: 0.54em;
     @include mq(md) {
         letter-spacing: .54em;
         font-size: rem(80);
@@ -65,7 +60,6 @@
     @include mq(md) {
         width: 100%;
         text-align: center;
-        margin-left: rem(-45);
     }
 }
 

@@ -25,7 +25,7 @@
         background-size: cover;
         position:absolute;
         top:rem(24);
-        left:rem(100);
+        left: calc(50vw - 40rem);
         display:inline-block;
         width: rem(376);
         max-width: 100%;
@@ -52,7 +52,6 @@
 
 .blog__body {
     width: 100%;
-    margin-top: rem(40);
     @include mq(md) {
         width: calc(33.3% - rem(40) * 2 / 3);
         margin-right: rem(40);

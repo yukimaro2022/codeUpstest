@@ -1,29 +1,29 @@
 
  
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+// jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
  
-  // logoの表示
+//   // logoの表示
  
-  $(window).on('load',function(){
-    let windowWidth = $(window).width();
-    if (windowWidth >= 765) { 
-      $('.opening').addClass('is-active')
-      $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+//   $(window).on('load',function(){
+//     let windowWidth = $(window).width();
+//     if (windowWidth >= 765) { 
+//       $('.opening').addClass('is-active')
+//       $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
       
-      $('#splash_logo img').addClass('is-active');
-      $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-      $('html').addClass('scroll__lock');
+//       $('#splash_logo img').addClass('is-active');
+//       $(".animation__center").addClass('is-active');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+//       $('html').addClass('scroll__lock');
       
-      setTimeout(() => {
-        $('html').removeClass('scroll__lock');
-        $('.opening').addClass('fadeOut');
-      }, "5000");
-    }else{
-    $("#splash").addClass('off');
-    $(".opening").addClass('off');
-  }// 例: PCサイズの幅が1024px以上と仮定
-});
-});
+//       setTimeout(() => {
+//         $('html').removeClass('scroll__lock');
+//         $('.opening').addClass('fadeOut');
+//       }, "5000");
+//     }else{
+//     $("#splash").addClass('off');
+//     $(".opening").addClass('off');
+//   }// 例: PCサイズの幅が1024px以上と仮定
+// });
+// });
  // Cookieを設定する関数
  function setCookie(name, value, days) {
   var expires = "";
@@ -71,29 +71,37 @@ function getCookie(name) {
 
   jQuery(function(){
     const swiper = new Swiper('.swiper', {
+      effect: 'fade',
       direction: 'horizontal',
       loop: true,
-      // autoplay: {
-      //   delay: 3000, // ミリ秒単位で自動再生の間隔を指定
-      // },
+      autoplay: {
+        delay: 3000, // ミリ秒単位で自動再生の間隔を指定
+      },
     });
   });
 
+
   jQuery(function(){
+    
     const swiper = new Swiper('.swiper__campaign', {
       direction: 'horizontal',
       spaceBetween: 40,
+      loop:true,
+      loopAdditionalSlides:1,
+      loopedSlides:1,
+      speed: 800,
       breakpoints: {
         // when window width is >= 320px
         
         768: {
-          slidesPerView:3,
+          slidesPerView:3.6,
         },
         480:{
           slidesPerView:1.8,
         },
         375:{
           slidesPerView:1.2,
+          spaceBetween: 24,
         }
       },
       navigation: {
@@ -103,6 +111,7 @@ function getCookie(name) {
     
     });
   });
+  
   
   // #から始まるURLがクリックされた時
   jQuery('a[href^="#"]').click(function() {

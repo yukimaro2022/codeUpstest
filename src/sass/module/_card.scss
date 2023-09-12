@@ -90,12 +90,8 @@
    
 
 .card__info{
-   padding: rem(16) 0 rem(24);
+   margin-top: rem(60);
     @include mq(md) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: rem(22) 0 rem(24);
         width: 45%;
     }
    

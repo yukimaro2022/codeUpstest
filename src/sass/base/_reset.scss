@@ -37,7 +37,11 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.5;
 }
-
+.scroll__lock{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul,

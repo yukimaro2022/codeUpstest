@@ -14,7 +14,9 @@
         font-size: rem(40);
     }
 }
-
+.section-title::first-letter{
+    color:$accent-color;
+}
 .section-title__sub {
     font-size: rem(12);
     color: $accent-color;
@@ -26,9 +28,7 @@
     display: inline-block;
 
 }
-.section__title--color{
-    color:$accent-color;
-}
+
 
 .section-title__contact.section-title{
     font-size: rem(80);
@@ -40,15 +40,4 @@
     @include mq(md) {
         color: $white;
     }
-}
-
-.section__title-area--lineHeight{
-    line-height: 1.9;
-    @include mq(md) {
-        margin-left: rem(12);
-    }
-}
-
-.section-title__contact{
-    line-height:.7;
 }
