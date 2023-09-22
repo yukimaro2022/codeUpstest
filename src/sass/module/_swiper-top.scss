@@ -1,0 +1,10 @@
+@use "global" as *;
+.swiper-top {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-top__slide{
+    width: 100%;
+    height: auto;
+}

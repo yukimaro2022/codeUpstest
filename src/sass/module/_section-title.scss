@@ -2,8 +2,11 @@
 
 .section__title-area {
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.3;
     position: relative;
+    @include mq(md) {
+        line-height: 1.1;
+    }
 }
 
 .section-title {
@@ -20,6 +23,13 @@
 .section-title__sub {
     font-size: rem(12);
     color: $accent-color;
+    display:inline-block;
+    
+}
+.section-title__indent{
+    @include mq(md) {
+        text-indent: 1.9em;
+    }
 }
 .section-title__link{
     font-size: rem(14);
@@ -29,12 +39,16 @@
 
 }
 
-
-.section-title__contact.section-title{
+.section__title-area__contact.section-title{
     font-size: rem(80);
-    line-height: .6;
-    margin-left: rem(-10);
+    text-indent: -.06em;
+    line-height: 1;
+    @include mq(md) {
+        line-height: 1;
+        text-indent: .3em;
+    }
 }
+
 
 .section-title--white{
     @include mq(md) {

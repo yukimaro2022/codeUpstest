@@ -3,17 +3,18 @@
 .swiper-button__wrapper{
     position: absolute;
     top:0;
-    right: rem(180);
+    right: rem(170);
     @include mq(md) {
-        top:rem(30);
-        right:rem(270)
+        top:rem(22);
+       max-width: rem(190);
+       width: 100%;
     }
     
 }
 
 .swiper-button-prev{
     @include mq(md) {
-        background-image: url("../images/common/pc-img/top/button2.webp");
+        background-image: url("../images/common/pc-img/top/button1.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -29,7 +30,7 @@
 
 .swiper-button-next{
     @include mq(md) {
-        background-image: url("../images/common/pc-img/top/button1.webp");
+        background-image: url("../images/common/pc-img/top/button2.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -38,6 +39,6 @@
         display:inline-block;
         position: absolute;
         top: 0;
-        right: 17px;
+        right: 0;
     }
 }

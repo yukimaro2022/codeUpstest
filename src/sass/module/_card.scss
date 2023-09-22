@@ -70,6 +70,7 @@
     line-height: calc(24 / 16);
     font-weight: 400;
     margin-top: rem(8);
+    letter-spacing: .01em;
 }
 
 .card__article{
@@ -90,27 +91,25 @@
    
 
 .card__info{
-   margin-top: rem(60);
+    margin-top: rem(20);
     @include mq(md) {
+        margin-top: rem(54);
         width: 45%;
     }
    
 }
 .card__bodys{
-    margin-top: rem(28);
+    margin-top: rem(26);
     @include mq(md) {
       display: flex; 
       flex-wrap: wrap;
-      margin-top: rem(40);
+      margin-top: rem(86);
     }
 }
 .card__content{
     margin-top: rem(24);
     display: flex;
     flex-direction: column;
-    @include mq(md) {
-        margin-top: rem(26);
-    }
 }
 
 .card__content + .card__content{

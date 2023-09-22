@@ -4,17 +4,18 @@
     height: rem(80);
     width: 100%;
     position: fixed;
-    z-index: 99;
+    z-index: 9999;
     background: rgba(13, 41, 54, 0.68);
     @include mq(md) {
         height: rem(90);
     }
 }
 
+
 .header__inner {
     height:inherit;
     transition: .5s;
-    padding: 0rem calc(max(1.38vw,1.3rem)) 0 calc(max(2.77vw,2.5rem));
+    padding: 0rem calc(max(.937vw,.937rem)) 0 calc(max(.937vw,.937rem));
     @include mq(md) {
         display: flex;
         align-items: center;
@@ -78,8 +79,8 @@
     height: inherit;
     justify-content: center;
     position: relative;
-    padding-right: rem(20);
-    padding-left: rem(20);
+                //clamp(最小サイズ(SP),タブレットサイズ(tab) + ビューポート幅,最大サイズ(PC)),
+    padding: clamp(0.625rem, 0.405rem + 0.939vw, 1.25rem);;
 }
 
 .header__item a:before{
@@ -102,20 +103,18 @@
     text-align: center;
     font-family: $base-font-family;
 }
-.header__drawer:nth-child(3){
-    margin-right: rem(20);
-    @include mq(md) {
-        margin: 0;
-    }
-}
+
 .header__drawer > .drawer-item{
     column-gap:rem(6);
 }
 
 .header__drawer-content{
     column-gap:rem(6);
-    top: rem(66);
+    top: rem(76);
     grid-row-gap: 0;
+    left: 0;
+    padding-right: rem(15);
+    padding-left: rem(15);
     @include mq(md) {
         grid-row-gap:rem(36);
     }

@@ -8,13 +8,15 @@
        padding-top:rem(98);
     }
 }
+
 .blog__inner.inner{
-    padding-left: rem(21);
     padding-right: rem(21);
+    padding-left: rem(21);
     @include mq(md) {
+        padding-right: rem(25);
         padding-left: rem(25);
-        padding-right: rem(25); 
     }
+   
 }
 .blog:after{
     @include mq(md) {
@@ -25,7 +27,7 @@
         background-size: cover;
         position:absolute;
         top:rem(24);
-        left: calc(50vw - 40rem);
+        left: calc(50vw - 43%);
         display:inline-block;
         width: rem(376);
         max-width: 100%;
@@ -58,7 +60,12 @@
         transition: .5s;
     }
 }
-
+.blog__body + .blog__body{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
 .blog__body:hover{
     opacity: .8;
 }
