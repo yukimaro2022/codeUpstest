@@ -56,12 +56,13 @@ $mediaquerys: (
   .u-desktop {
     display: none;
     @include mq("md") {
-      display: block;
+      display: inline-block
     }
   }
 
   //モバイルのみ表示
   .u-mobile {
+    
     @include mq("md") {
       display: none;
     }
@@ -69,9 +70,9 @@ $mediaquerys: (
 } @else {
   //pcで表示
   .u-desktop {
-    display: block;
+    display: none;
     @include mq("md") {
-      display: none;
+      display: block;
     }
   }
 

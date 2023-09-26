@@ -58,7 +58,7 @@
    grid-template-columns: repeat(2,1fr);
    opacity: 0;
    visibility: hidden;
-   transition: .5s;
+//    transition: .3s;
    grid-row-gap: 40px;
    column-gap: rem(16);
    margin-top: rem(24);
@@ -120,7 +120,7 @@
     font-weight: 700;
 }
 .drawer-background{
-    transition: .5s;
+    transition: .3s;
 }
 .drawer-background.is-active{
     background-color: $accent-color;
@@ -136,4 +136,34 @@
     @include mq(md) {
         margin-top: rem(38);
     }
+}
+
+.drawer__menus01{
+    order:1;
+    @include mq(md) {
+        order: unset;
+    }
+}
+.drawer__menus02{
+    order: 3;
+    @include mq(md) {
+        order: unset;
+    }
+}
+.drawer__menus03{
+    order: 2;
+    margin-left: rem(12);
+    @include mq(md) {
+        order: unset;
+        margin-left: 0;
+    }
+}
+
+.drawer__menus04{
+   order:4; 
+   margin-left: rem(12);
+   @include mq(md) {
+       order: unset;
+       margin-left: 0;
+   }
 }

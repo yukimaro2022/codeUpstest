@@ -20,6 +20,9 @@
 .section-title::first-letter{
     color:$accent-color;
 }
+.section-title:nth-child(4)::first-letter{
+    color: white;
+}
 .section-title__sub {
     font-size: rem(12);
     color: $accent-color;
@@ -48,9 +51,14 @@
         text-indent: .3em;
     }
 }
-
-
 .section-title--white{
+    color: #333;
+    @include mq(md) {
+        color: #fff;
+    }
+}
+
+.section-title--white::first-letter{
     @include mq(md) {
         color: $white;
     }

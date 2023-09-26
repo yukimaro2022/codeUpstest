@@ -9,10 +9,10 @@
 }
 
 .about__body {
-    margin-top: rem(32);
+    margin-top: rem(26);
     position: relative;
     @include mq(md) {
-        margin-top: rem(26);
+        margin-top: rem(48);
     }
 }
 .about__bodyArea{
@@ -46,7 +46,7 @@
 }
 .about__textArea-wrapper{
     margin-top: rem(40);
-    top: 49%;
+    top: 48%;
     @include mq(md) {
         display: flex;
         margin-top: 0;
@@ -108,7 +108,7 @@
     position: absolute;
     height: auto;
     display: inline-block;
-    left: calc(64 / 375 * 100%);
+    left: rem(64);
     height: auto;
     width: auto;
     @include mq(md) {

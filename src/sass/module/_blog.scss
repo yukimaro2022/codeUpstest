@@ -1,12 +1,7 @@
 @use "global" as *;
 
 .blog {
-    margin-top: rem(80);
-    position: relative;
-    @include mq(md) {
-       margin-top: 0;
-       padding-top:rem(98);
-    }
+   position: relative;
 }
 
 .blog__inner.inner{
@@ -27,7 +22,7 @@
         background-size: cover;
         position:absolute;
         top:rem(24);
-        left: calc(50vw - 43%);
+        left: calc(50% - min(49vw, 38.75rem));
         display:inline-block;
         width: rem(376);
         max-width: 100%;

@@ -14,7 +14,6 @@
 
 .header__inner {
     height:inherit;
-    transition: .5s;
     padding: 0rem calc(max(.937vw,.937rem)) 0 calc(max(.937vw,.937rem));
     @include mq(md) {
         display: flex;
@@ -33,7 +32,10 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    height:100%;
+    height:inherit;
+    @include mq(md) {
+        justify-content: unset;
+    }
 }
 
 .header__title {
@@ -80,7 +82,8 @@
     justify-content: center;
     position: relative;
                 //clamp(最小サイズ(SP),タブレットサイズ(tab) + ビューポート幅,最大サイズ(PC)),
-    padding: clamp(0.625rem, 0.405rem + 0.939vw, 1.25rem);;
+    padding-right: clamp(0.625rem, 0.405rem + 0.939vw, 1.25rem);;
+    padding-left: clamp(0.625rem, 0.405rem + 0.939vw, 1.25rem);;
 }
 
 .header__item a:before{

@@ -1,14 +1,6 @@
 @use "global" as *;
 footer{
-    padding-top: rem(48);
-    background-color: $accent-color;
-    padding-bottom: rem(56);
-    margin-top: rem(10);
-    @include mq(md) {
-        margin-top: rem(10);
-       padding-top: rem(80);
-       padding-bottom: rem(80);
-   }
+
 }
 .footer__inner{
     padding-left: rem(15);
@@ -38,21 +30,11 @@ footer{
    margin-top: rem(32);
    column-gap: unset;
    @include mq(md) {
-       column-gap: min(5vw,120px);
-       margin-top: rem(10);
+       column-gap: min(1.4vw,40px);
+       margin-top: rem(8);
        grid-template-columns: repeat(4, 1fr);
    }
 }
-
-.footer__content .drawer__menus:nth-child(even){
-       margin-left: rem(10);
-}
-// .footer__content .drawer__menus:nth-child(3){
-//     margin-right: rem(34);
-//     @include mq(md) {
-//        margin-right: 0;
-//     }
-// }
 
 
 

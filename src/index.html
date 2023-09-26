@@ -237,7 +237,7 @@
 
  
   <!-- campaign -->
-  <section id="campaign" class="campaign section-leyer">
+  <section id="campaign" class="campaign campaign-layer">
     <div class="section__title-area">
       <h2 class="section-title">Campaign</h2>
       <span class="section-title__sub">キャンペーン</span>
@@ -419,7 +419,7 @@
 <!-- campaign完了 -->
 
 <!-- about -->
-<section id="about" class="about section-leyer">
+<section id="about" class="about section-layer">
   <div class="about__inner inner">
     <div class="section__title-area">
       <h2 class="section-title">About us</h2>
@@ -454,7 +454,7 @@
 <!-- about完了 -->
 
 <!-- インフォメーション -->
-<section id="infomation" class="information acccent--backgroudColor section-leyer section-leyer__padding">
+<section id="infomation" class="information acccent--backgroudColor section-layer section-layer__padding">
   <div class="infomation__inner inner">
     <div class="section__title-area">
       <h2 class="section-title">Information</h2>
@@ -482,7 +482,7 @@
 <!-- インフォメーション終了 -->
 
 <!-- blog -->
-<section id="blog" class="blog section-leyer">
+<section id="blog" class="blog section-layer blog-layer">
   <div class="blog__inner inner">
     <div class="section__title-area">
       <h2 class="section-title section-title--white"><span class="section__title--color section-title--white">B</span>log</h2>
@@ -544,7 +544,7 @@
 <!-- blog完了 -->
 
   <!-- voice -->
-  <section id="voice" class="voice section-leyer">
+  <section id="voice" class="voice section-layer">
     <div class="voice__inner inner">
       <div class="section__title-area">
         <h2 class="section-title">Voice</h2>
@@ -600,7 +600,7 @@
   <!-- voice完了 -->
 
   <!-- price -->
-  <section id="price" class="price acccent--backgroudColor section-leyer section-leyer__padding">
+  <section id="price" class="price acccent--backgroudColor section-layer section-layer__padding">
     <div class="price__inner inner">
       <div class="section__title-area">
         <h2 class="section-title">Price</h2>
@@ -696,7 +696,7 @@
   <!-- price完了 -->
 
   <!-- contact -->
-  <section id="contact" class="contact section-leyer">
+  <section id="contact" class="contact section-layer">
     <div class="contact__inner inner">
       <div class="contact__wrapper">
         <div class="contact__bodyWrapper">
@@ -729,25 +729,21 @@
           </div>
         </div>
       </div>
-      <!-- ボタン完了 -->
-      <div class="number__section">
-        <div class="number__inner">
-          <div class="number__imgArea">
-            <figure class="number__img">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="23.5" transform="rotate(-90 24 24)" stroke="#408F95"/>
-              </svg>
-              
-            </figure>
-          </div>
-        </div>
-      </div>
-      
     </div>
   </section>
+  <!-- ボタン完了 -->
+  <div id="page-top" class="number__section">
+    <figure class="number__img">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="23.5" transform="rotate(-90 24 24)" stroke="#408F95"/>
+        </svg>
+      </a>
+    </figure>
+  </div>
 </main>
 <!-- contact完了 -->
-  <footer class="footer">
+  <footer class="footer footer-layer">
     <div class="footer__inner inner">
       <div class="footer__title-wrapper">
         <div class="footer__title"><a href="#"><img src="./assets/images/common/pc-img/top/CodeUps.png" loading="lazy" alt="logo"></a></div>
@@ -765,7 +761,7 @@
         </div>
       </div>
       <div class="footer__content">
-        <ul class="drawer__menus">
+        <ul class="drawer__menus drawer__menus01">
             <li class="drawer-item  icon">
               <a href="#">
                 キャンペーン
@@ -793,7 +789,35 @@
             </li>
         </ul>
 
-        <ul class="drawer__menus">
+        <ul class="drawer__menus drawer__menus02">
+          <li class="drawer-item icon drawer-item--topSpace">
+            <a href="#">
+             ダイビング情報
+            </a>
+          </li>
+          <li class="drawer-item">
+            <a href="#">
+              ライセンス講習
+            </a>
+          </li>
+          <li class="drawer-item">
+            <a href="#">
+              体験ダイビング
+            </a>
+          </li>
+          <li class="drawer-item">
+            <a href="#">
+              ファンダイビング
+            </a>
+          </li>
+          <li class="drawer-item  icon drawer-item-topSpace">
+            <a href="#">
+              ブログ
+            </a>
+          </li>
+        </ul>
+
+        <ul class="drawer__menus drawer__menus03">
           <li class="drawer-item icon">
             <a href="#">
               お客様の声
@@ -821,35 +845,8 @@
           </li>
         </ul>
 
-        <ul class="drawer__menus">
-          <li class="drawer-item icon drawer-item--topSpace">
-            <a href="#">
-             ダイビング情報
-            </a>
-          </li>
-          <li class="drawer-item">
-            <a href="#">
-              ライセンス講習
-            </a>
-          </li>
-          <li class="drawer-item">
-            <a href="#">
-              体験ダイビング
-            </a>
-          </li>
-          <li class="drawer-item">
-            <a href="#">
-              ファンダイビング
-            </a>
-          </li>
-          <li class="drawer-item  icon drawer-item-topSpace">
-            <a href="#">
-              ブログ
-            </a>
-          </li>
-        </ul>
         
-        <ul class="drawer__menus">
+        <ul class="drawer__menus drawer__menus04">
           <li class="drawer-item icon ">
             <a href="#">
               よくある質問

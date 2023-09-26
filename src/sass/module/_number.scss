@@ -1,19 +1,23 @@
 @use "global" as *;
 
 .number__section {
-    margin-top: rem(34);
+    position: fixed;
+    left: calc(100% - 20vw);
+    bottom: rem(80);
     @include mq(md) {
-        margin-right: calc(50% - 48.7vw);
-        margin-top: rem(40);
+        bottom: 420px;
+        left: calc(100% - 13vw);
     }
 }
-
+.number__section a{
+    height: inherit;
+    display: inline-block;
+    width: 100%;
+}
 .number__inner {
 
 }
-.number__imgArea{
-    text-align: right;
-}
+
 .number__img{
   position: relative;
 }
@@ -30,6 +34,7 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+    z-index: -1;
     @include mq(md) {
        right: rem(14);
        background-image:url("../images/common/pc-img/background-img/backgrounud-nuber.png");

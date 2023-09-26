@@ -1,7 +1,7 @@
+// ------------ドロワー --------------
 
-    // ------------ドロワー --------------
-
-  jQuery('.drawer__btns').on('click',function(){
+jQuery('.drawer__btns').on('click',function(){
+    
       jQuery('.drawer__btns').toggleClass('is-active');
       jQuery('.drawer__btns span').toggleClass('is-active');
       jQuery('.drawer__content').toggleClass('is-active');
@@ -9,7 +9,7 @@
       jQuery('.header__inner').toggleClass('is-active');
 
       jQuery('body').toggleClass('scroll-lock');
-    });
+});
     
     jQuery('.drawer-item a').on('click',function(){
       
@@ -46,7 +46,7 @@
 
       breakpoints: {
         768: {
-          slidesPerView: 3.5,
+          slidesPerView: 3.48,
         },
         580: {
           slidesPerView: 1.8,
@@ -93,19 +93,6 @@
     return false;
   });
 
-
-  // let js__fade = document.querySelector('.card__article');
-  // console.log(js__fade)
-  // gsap.to(js__fade, {
-  //   opacity: 1, // 例えば opacity をアニメーションする例
-  //   duration: 1, // アニメーションの時間
-  //   scrollTrigger: {
-  //     trigger: js__fade,
-  //     start: 'center top', // 画面内に表示されたときにアニメーションをトリガーする位置
-  //     markers: true // マーカーを表示するかどうか（デバッグ用）
-  //   },
-  // });
-
   //要素の取得とスピードの設定
   var box = $('.animation__image'),
       speed = 700;  
@@ -136,3 +123,20 @@
   });
 });
 
+$(function(){
+  var pagetop = $('#page_top');
+  // ボタン非表示
+  pagetop.hide();
+  // 100px スクロールしたらボタン表示
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 500);
+     return false;
+  });
+});

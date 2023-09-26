@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.footer-layer{
+    margin-top: rem(96);
+    padding-top: rem(48);
+    background-color: $accent-color;
+    padding-bottom: rem(56);
+    @include mq(md) {
+        margin-top: rem(148);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+}
