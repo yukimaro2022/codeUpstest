@@ -50,8 +50,6 @@
 .blog__body {
     width: 100%;
     @include mq(md) {
-        width: calc(33.3% - rem(40) * 2 / 3);
-        margin-right: rem(40);
         transition: .5s;
     }
 }
