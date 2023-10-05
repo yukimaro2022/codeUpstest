@@ -2,12 +2,8 @@
 
 .number__section {
     position: fixed;
-    left: calc(100% - 20vw);
-    bottom: rem(80);
-    @include mq(md) {
-        bottom: 420px;
-        left: calc(100% - 13vw);
-    }
+    right: rem(20);
+    bottom: rem(20);
 }
 .number__section a{
     height: inherit;
@@ -34,7 +30,6 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    z-index: -1;
     @include mq(md) {
        right: rem(14);
        background-image:url("../images/common/pc-img/background-img/backgrounud-nuber.png");

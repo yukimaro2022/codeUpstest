@@ -20,6 +20,11 @@
 .section__titleMain::first-letter{
     color:$accent-color;
 }
+.section__titleContact{
+    @include mq(md) {
+        font-size: rem(60);
+    }
+}
 .section-title:nth-child(4)::first-letter{
     color: white;
 }

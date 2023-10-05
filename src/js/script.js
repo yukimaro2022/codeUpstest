@@ -123,20 +123,44 @@ jQuery('.drawer__btns').on('click',function(){
   });
 });
 
-$(function(){
-  var pagetop = $('#page_top');
-  // ボタン非表示
-  pagetop.hide();
-  // 100px スクロールしたらボタン表示
+// ページトップボタン
+$(function () {
+  const pageTop = $("#page-top");
+  pageTop.hide();
   $(window).scroll(function () {
-     if ($(this).scrollTop() > 100) {
-          pagetop.fadeIn();
-     } else {
-          pagetop.fadeOut();
-     }
+    if ($(this).scrollTop() > 100) {
+      pageTop.fadeIn();
+    } else {
+      pageTop.fadeOut();
+    }
   });
-  pagetop.click(function () {
-     $('body, html').animate({ scrollTop: 0 }, 500);
-     return false;
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
+  // フッター手前でストップ
+  $("#page-top").hide();
+  $(window).on("scroll", function () {
+    let scrollHeight = $(document).height();
+    let scrollPosition = $(window).height() + $(window).scrollTop();
+    let footerHeight = $(".footer").innerHeight();
+    console.log(footerHeight);
+    if (scrollHeight - scrollPosition <= footerHeight) {
+ 　　　// ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+      $("#page-top").css({
+        position: "absolute",
+        bottom: footerHeight,
+      });
+    } else {
+      $("#page-top").css({
+        position: "fixed",
+        bottom: "0",
+      });
+    }
   });
 });

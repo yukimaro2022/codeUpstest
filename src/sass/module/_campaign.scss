@@ -7,9 +7,8 @@
 
 .swiper__campaign.swiper {
     width: 100%;
-    padding-bottom: rem(40);
+    padding-bottom: rem(10);
     position: relative;
-    overflow: hidden;
 }
 .swiper__cards{
     margin-right: calc(50% - 50vw);
@@ -102,7 +101,6 @@
     font-weight: 700;
     letter-spacing: .05em;
     font-family: 'Lato', sans-serif;
-    margin-left: rem(24);
     @include mq(md) {
         font-size: min(2.5rem,2.8vw);
         
@@ -123,6 +121,7 @@
 .campaign__price-textBorder{
     position: relative;
     text-align: center;
+    margin-right: rem(24);
     @include mq(md) {
         font-size: rem(24);
     }

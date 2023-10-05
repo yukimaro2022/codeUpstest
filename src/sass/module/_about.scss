@@ -88,7 +88,6 @@
 
 
 .about__imgArea-img1{
-    // max-width: max(rem(128),10vw);
     height: auto;
     display: inline-block;
     position: relative;
@@ -96,8 +95,6 @@
     margin-bottom: rem(16);
     width: calc(140 / 375 * 100%);
     @include mq(md) {
-        max-width: rem(400);
-        width: 100%;
         margin-bottom: rem(52);
     }
 }
