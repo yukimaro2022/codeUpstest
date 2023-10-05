@@ -55,6 +55,7 @@
 .card-wrapper__bodys figure{
     position: relative;
     margin-top: rem(12);
+    aspect-ratio: 150 /117;
     @include mq(md) {
         margin-top: 0;
         aspect-ratio: 180/140;
@@ -88,7 +89,7 @@
     font-weight: 700;
         @include mq(md) {
             font-size: rem(24);
-            margin-top: rem(10);
+            margin-top: rem(6);
         }
     }
     
