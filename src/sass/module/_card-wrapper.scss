@@ -25,7 +25,7 @@
 
 
 .card-wrapper__inner {
-    padding: rem(15) rem(16) rem(24);
+    padding: rem(12) rem(16) rem(24);
     @include mq(md) {
         padding: rem(24) rem(25) rem(20);
 
@@ -85,11 +85,12 @@
     width: 100%;
     position: relative;
     padding-bottom: rem(3);
+    margin-top: rem(3);
     font-size: rem(16);
     font-weight: 700;
         @include mq(md) {
             font-size: rem(24);
-            margin-top: rem(6);
+            margin-top: rem(10);
         }
     }
     

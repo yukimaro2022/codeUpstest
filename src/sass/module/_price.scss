@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .price{
-    padding-top: rem(40);
+    padding-top: rem(80);
     padding-bottom: rem(80);
     @include mq(md) {
         padding-top: rem(100);
@@ -31,7 +31,7 @@
     }
 }
 .price__bodyWrapper {
-    margin-top: rem(28);
+    margin-top: rem(24);
     @include mq(md) {
         display: grid;
         grid-template-columns: 1fr 1fr;

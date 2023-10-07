@@ -30,7 +30,7 @@ footer{
    margin-top: rem(32);
    column-gap: unset;
    @include mq(md) {
-       column-gap: min(1.4vw,40px);
+       column-gap: min(1.4vw,70px);
        margin-top: rem(8);
        grid-template-columns: repeat(4, 1fr);
    }

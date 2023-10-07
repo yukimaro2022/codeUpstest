@@ -40,7 +40,7 @@
     flex-direction: column;
     height: 100%;
     @include mq(md) {
-        padding: rem(20) rem(18) rem(28);
+        padding: rem(24) rem(18) rem(28);
         
     }
     
@@ -50,23 +50,24 @@
     font-size: rem(12);
     color: $accent-color;
     border: 1px solid $accent-color;
-    padding: rem(5) rem(11);
     width: fit-content;
     display: inline-block;
+    padding: rem(3) rem(10);
     @include mq(md) {
+        
         padding: rem(6) rem(15);
     }
 }
 
 .campaign__title {
-    margin-top: rem(2);
+    margin-top: rem(3);
     padding-bottom:rem(10);
     position: relative;
     font-weight: 500;
     font-size: rem(16);
     @include mq(md) {
         padding-bottom: rem(9);
-        margin-top: rem(6);
+        margin-top: rem(4);
     }
 }
 .campaign__title:after{
@@ -121,7 +122,8 @@
 .campaign__price-textBorder{
     position: relative;
     text-align: center;
-    margin-right: rem(24);
+    margin-right: rem(8);
+    letter-spacing: .05em;
     @include mq(md) {
         font-size: rem(24);
     }

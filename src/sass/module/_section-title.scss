@@ -20,11 +20,19 @@
 .section__titleMain::first-letter{
     color:$accent-color;
 }
+
+
 .section__titleContact{
-    @include mq(md) {
-        font-size: rem(60);
-    }
+    font-size: rem(80);
+    text-indent: -.06em;
+    line-height: 1;
+    font-family: $second-font-family;
+    font-weight: 400;
 }
+.section__titleContact::first-letter{
+    color: $accent-color;
+}
+
 .section-title:nth-child(4)::first-letter{
     color: white;
 }
@@ -34,28 +42,16 @@
     display:inline-block;
     
 }
-.section__titleIndent{
-    @include mq(md) {
-        text-indent: 1.9em;
-    }
-}
+
 .section__titleLink{
     font-size: rem(14);
     color: $accent-color;
-    // margin-top: rem(10);
+    margin-top: rem(10);
     display: inline-block;
 
 }
 
-.section__title-area__contact.section-title{
-    font-size: rem(80);
-    text-indent: -.06em;
-    line-height: 1;
-    @include mq(md) {
-        line-height: 1;
-        text-indent: .3em;
-    }
-}
+
 .section-title--white{
     color: #333;
     @include mq(md) {
