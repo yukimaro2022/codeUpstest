@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.btnArea {
+.btn {
     text-align: center;
     position: relative;
 }
 
-.btn {
+.btn__link {
     max-width: rem(206);
     width: 100%;
     display: inline-block;
@@ -17,7 +17,7 @@
     }
 }
 
-.btn:before{
+.btn__link:before{
     border: 1px solid $accent-color;
     content: "";
     display: inline-block;
@@ -28,7 +28,7 @@
     width: 100%;
   
 }
-.btn span:first-child{
+.btn__link span:first-child{
     position: relative;
     padding-right:rem(80);
 }

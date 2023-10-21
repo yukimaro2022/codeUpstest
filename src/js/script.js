@@ -1,28 +1,28 @@
 // ------------ドロワー --------------
 
+
 jQuery('.drawer__btns').on('click',function(){
-    
-      jQuery('.drawer__btns').toggleClass('is-active');
+  // jQuery('.drawer__btns').toggleClass('is-active');
       jQuery('.drawer__btns span').toggleClass('is-active');
-      jQuery('.drawer__content').toggleClass('is-active');
-      jQuery('.drawer-background').toggleClass('is-active');
+      jQuery('.header-nav').toggleClass('is-active');
+      jQuery('.header__drawer-background').toggleClass('is-active');
       jQuery('.header__inner').toggleClass('is-active');
 
       jQuery('body').toggleClass('scroll-lock');
 });
     
-    jQuery('.drawer-item a').on('click',function(){
+    jQuery('.drawer__item a').on('click',function(){
       
-    jQuery('.drawer-btns , .drawer-btns span').removeClass('is-active');
-    jQuery('.drawer__content').removeClass('is-active');
-    jQuery('.drawer-background').removeClass('is-active');
+    // jQuery('.drawer__btns , .drawer__btns span').removeClass('is-active');
+    jQuery('.header-nav').removeClass('is-active');
+    jQuery('.header__drawer-background').removeClass('is-active');
     jQuery('.header__inner').removeClass('is-active');
     jQuery('body').removeClass('scroll-lock');
     });
   // });
 
   jQuery(function(){
-    const swiper__top= new Swiper('.swiper-top', {
+    const swiper__top= new Swiper('.top__swiper', {
       effect: 'fade',
       direction: 'horizontal',
       loop: true,
@@ -35,7 +35,7 @@ jQuery('.drawer__btns').on('click',function(){
 
   jQuery(function(){
     
-    const swiper__campaign= new Swiper('.swiper__campaign', {
+    const swiper__campaign= new Swiper('.campaign__swiper', {
       // direction: 'horizontal',
       spaceBetween: 40,
       loop: true,
@@ -57,8 +57,8 @@ jQuery('.drawer__btns').on('click',function(){
         }
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button__next",
+        prevEl: ".swiper-button__prev",
       },
       
     });
@@ -94,7 +94,7 @@ jQuery('.drawer__btns').on('click',function(){
   });
 
   //要素の取得とスピードの設定
-  var box = $('.animation__image'),
+  var box = $('.card-box__img'),
       speed = 700;  
   
   //.colorboxの付いた全ての要素に対して下記の処理を行う

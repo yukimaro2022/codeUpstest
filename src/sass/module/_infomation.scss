@@ -1,7 +1,7 @@
 @use "global" as *;
 .information {
     padding-top: rem(80);
-    padding-bottom: rem(80);
+    padding-bottom: rem(76);
     @include mq(md) {
         padding-top: rem(100);
         padding-bottom: rem(100);
@@ -12,7 +12,7 @@
 .infomation__body {
     margin-top: rem(26);
     @include mq(md) {
-        margin-top: rem(46);
+        margin-top: rem(42);
     }
 }
 .infomation__inner.inner{

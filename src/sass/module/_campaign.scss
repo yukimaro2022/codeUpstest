@@ -4,21 +4,13 @@
     
 }
 
-
-.swiper__campaign.swiper {
-    width: 100%;
-    padding-bottom: rem(10);
-    position: relative;
-}
-.swiper__cards{
+.campaign__container{
     margin-right: calc(50% - 50vw);
     margin-top: rem(28);
     @include mq(md) {
         margin-top: rem(44);
     }
 }
-
-
 .campaign__content {
     // max-width: rem(280);
     height: 100%;
@@ -32,112 +24,6 @@
 }
 .campaign__content figure img{
     aspect-ratio: 280/188;
-}
-
-.campaign__body {
-    padding:rem(14) rem(16) rem(18);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    @include mq(md) {
-        padding: rem(24) rem(18) rem(28);
-        
-    }
-    
-}
-
-.campaign__info {
-    font-size: rem(12);
-    color: $accent-color;
-    border: 1px solid $accent-color;
-    width: fit-content;
-    display: inline-block;
-    padding: rem(3) rem(10);
-    @include mq(md) {
-        
-        padding: rem(6) rem(15);
-    }
-}
-
-.campaign__title {
-    margin-top: rem(3);
-    padding-bottom:rem(10);
-    position: relative;
-    font-weight: 500;
-    font-size: rem(16);
-    @include mq(md) {
-        padding-bottom: rem(9);
-        margin-top: rem(4);
-    }
-}
-.campaign__title:after{
-    content:'';
-    position:absolute;
-    bottom:0;
-    left:0;
-    display:inline-block;
-    width: 100%;
-    height:rem(1);
-    background-color:$accent-color;
-}
-.campaign__price {
-    height: 100%;
-}
-
-.campaign__price-title {
-    margin-top: rem(8);
-    font-weight: 400;
-    font-size: rem(14);
-    text-align: center;
-    @include mq(md) {
-        margin-top: rem(16);
-        font-size: rem(16);
-        text-indent: -0.8em;
-    }
-}
-
-.campaign__price-titleBig {
-    font-size: rem(32);
-    color: $accent-color;
-    font-weight: 700;
-    letter-spacing: .05em;
-    font-family: 'Lato', sans-serif;
-    @include mq(md) {
-        font-size: min(2.5rem,2.8vw);
-        
-    }
-}
-.campaign__price-text{
-    font-size: rem(20);
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    @include mq(md) {
-        align-items: center;
-    }
-}
-
-.campaign__price-textBorder{
-    position: relative;
-    text-align: center;
-    margin-right: rem(8);
-    letter-spacing: .05em;
-    @include mq(md) {
-        font-size: rem(24);
-    }
-}
-.campaign__price-textBorder:before{
-    content:'';
-    position:absolute;
-    top:50%;
-    transform:translate(-50%,0);
-    display:inline-block;
-    width: 100%;
-    height:rem(2);
-    background-color: red;
-   left: 50%;
 }
 
 .swiper-button__wrapper .swiper-button-prev,
@@ -154,3 +40,28 @@
 .swiper-button-next{
    
 }
+
+.campagin__card{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--White, #FFF);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    @include mq(md) {
+        width: 100%;
+    }
+}
+
+.campagin__card{
+    height: auto;
+}
+.campagin__card:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+// .campaign__swiper{
+//     margin-top: rem(40);
+// }

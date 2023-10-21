@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.card-meta__time{
+    font-size: rem(12);
+    font-family: $second-font-family;
+}
+
+.card-meta__title{
+    font-size: rem(16);
+    position: relative;
+    font-weight: 500;
+    padding-bottom: rem(3);
+}
+
+.card__item-text{
+    margin-top: rem(16);
+ }
+ .card-meta__text{
+    margin-top: rem(16);
+ }

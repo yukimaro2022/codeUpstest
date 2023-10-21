@@ -1,0 +1,91 @@
+@use "global" as *;
+
+
+.card-box figure{
+    aspect-ratio: 345/227;
+    @include mq(md) {
+    aspect-ratio: 540 / 356;
+    }
+}
+.card-box__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(100%);
+    position: relative;
+    z-index: 30;
+}
+
+// .card__body {
+//     margin-top: rem(24);
+    
+// }
+
+.card-box__title-sub {
+    font-weight: 700;
+    position: relative;
+    font-size: rem(20);
+    @include mq(md) {
+        font-size: rem(24);
+    }
+    
+}
+.card-box__title-sub:after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    display:inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: $accent-color;
+}
+.card-box__textArea {
+    line-height: calc(24 / 16);
+    font-weight: 400;
+    margin-top: rem(8);
+    letter-spacing: .01em;
+}
+
+.card-box__article{
+    overflow: hidden;
+    @include mq(md) {
+        display: flex;
+    }
+}
+.card-box__article figure{
+    position: relative;
+    width: 100%;
+    @include mq(md) {
+        margin-right: rem(48);
+        overflow: hidden;
+        width: 50%;
+    }
+    }
+   
+
+.card-box__info{
+    margin-top: rem(22);
+    @include mq(md) {
+        margin-top: rem(58);
+        width: 45%;
+    }
+   
+}
+
+.card-box__img{
+    overflow: hidden;
+}
+.card-box__img img.is-active{
+    transform: translateX(0);
+    transition: 3s;
+}
+
+.card-box__img img{
+    opacity: 0;
+    position: relative;
+    z-index: 30;
+    transform: translateX(100%);
+    aspect-ratio: 150/118;
+}
+// キャンペーン

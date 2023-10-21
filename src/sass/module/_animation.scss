@@ -1,20 +1,5 @@
 @use "global" as *;
 
-.animation__image{
-    overflow: hidden;
-}
-.animation__image img.is-active{
-    transform: translateX(0);
-    transition: 3s;
-}
-
-.animation__image img{
-    opacity: 0;
-    position: relative;
-    z-index: 30;
-    transform: translateX(100%);
-    aspect-ratio: 150/118;
-}
 .color{
     content:'';
     position:absolute;

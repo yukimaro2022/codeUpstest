@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.about__body {
+.about__wrapper {
     margin-top: rem(26);
     position: relative;
     @include mq(md) {
-        margin-top: rem(48);
+        margin-top: rem(44);
     }
 }
-.about__bodyArea{
+.about__body{
     position: relative;
     display: flex;
     align-items: end;
@@ -36,7 +36,7 @@
         display: block;
     }
 }
-.about__textArea-wrapper{
+.about__text{
     margin-top: rem(40);
     top: 49%;
     @include mq(md) {
@@ -48,7 +48,7 @@
         transform: translateY(-50%);
     }
 }
-.about__textArea-wrapper__title {
+.about__title {
     font-size: rem(40);
     font-family: $second-font-family;
     color: $accent-color;
@@ -64,14 +64,14 @@
         width: 100%;
     }
 }
-.about__textArea-wrapper__textArea{
+.about__box{
     width: 100%;
     @include mq(md) {
         padding: 0 rem(30) 0 rem(20);
     }
 }
 
-.about__textArea-wrapper__text {
+.about__info {
     margin-top: rem(16);
     line-height: calc(24 / 16);
     @include mq(md) {
@@ -81,7 +81,7 @@
 }
 
 
-.about__imgArea-img1{
+.about__img1{
     height: auto;
     display: inline-block;
     position: relative;
@@ -96,7 +96,7 @@
         width: auto;
     }
 }
-.about__imgArea-img2{
+.about__img2{
     position: absolute;
     height: auto;
     display: inline-block;
