@@ -43,10 +43,7 @@
     }
 }
 .card-item__bodys{
-    display: grid;
-    @include mq(md) {
-        grid-template-columns: 1fr 1fr;
-    }
+        display: flex;
 }
 .card-item__bodys figure{
     position: relative;
