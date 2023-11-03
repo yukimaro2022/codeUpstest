@@ -39,7 +39,8 @@
         margin-top: rem(44);
     }
 }
-.price__description{
+
+.price__description dl{
     margin-top: rem(11);
     display: flex;
     justify-content: space-between;
@@ -47,7 +48,6 @@
         margin-top: rem(8);
     }
 }
-
 .price__list + .price__list{
     margin-top: rem(41);
 }
@@ -76,14 +76,14 @@
     }
 }
 
-.price__title {
+.price__name {
     font-weight: 700;
     position: relative;
     padding-bottom: rem(4);
     font-size: rem(16);
 }
 
-.price__title:after{
+.price__name:after{
     content:'';
     position:absolute;
     bottom: 0;
@@ -94,7 +94,7 @@
     background-color: $accent-color;
 }
 
-.price__title + .price__title{
+.price__name + .price__name{
     margin-top: rem(40);
 }
 .price__text,
@@ -123,8 +123,9 @@
 }
 
 
-.price-btn{
+.price__btn{
     margin-top: rem(40);
+    text-align: center;
     @include mq(md) {
         margin-top: rem(80);
     }

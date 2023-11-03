@@ -27,26 +27,26 @@
     transition: .3s;
 }
 
-.drawer__btn1 {
+.drawer__btn--1 {
     top:0;
     left: 0;
 }
-.drawer__btn1.is-active{
+.drawer__btn--1.is-active{
     transform:rotate(38deg);
     top:50%;
 }
-.drawer__btn2 {
+.drawer__btn--2 {
     top:50%;
     left:0;
 }
-.drawer__btn2.is-active{
+.drawer__btn--2.is-active{
     opacity: 0;
 }
-.drawer__btn3 {
+.drawer__btn--3 {
     bottom:0;
     left:0;
 }
-.drawer__btn3.is-active{
+.drawer__btn--3.is-active{
     transform:rotate(-38deg);
     top: 50%;
 }

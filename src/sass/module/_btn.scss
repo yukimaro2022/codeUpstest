@@ -1,23 +1,20 @@
 @use "global" as *;
 
 .btn {
-    text-align: center;
-    position: relative;
-}
-
-.btn__link {
     max-width: rem(206);
     width: 100%;
     display: inline-block;
     position: relative;
     height: 100%;
+    text-align: center;
+    position: relative;
     @include mq(md) {
         max-width: rem(200);
         width: 100%;
     }
 }
 
-.btn__link:before{
+.btn:before{
     border: 1px solid $accent-color;
     content: "";
     display: inline-block;
@@ -28,7 +25,7 @@
     width: 100%;
   
 }
-.btn__link span:first-child{
+.btn span:first-child{
     position: relative;
     padding-right:rem(80);
 }

@@ -22,7 +22,7 @@ jQuery('.drawer__btns').on('click',function(){
   // });
 
   jQuery(function(){
-    const swiper__top= new Swiper('.top__swiper', {
+    const swiper__top= new Swiper('.js-top-swiper', {
       effect: 'fade',
       direction: 'horizontal',
       loop: true,
@@ -35,7 +35,7 @@ jQuery('.drawer__btns').on('click',function(){
 
   jQuery(function(){
     
-    const swiper__campaign= new Swiper('.campaign__swiper', {
+    const swiper__campaign= new Swiper('.js-campaign-swiper', {
       // direction: 'horizontal',
       spaceBetween: 40,
       loop: true,
@@ -94,8 +94,8 @@ jQuery('.drawer__btns').on('click',function(){
   });
 
   //要素の取得とスピードの設定
-  var box = $('.card-box__img'),
-      speed = 700;  
+  var box = $('.slide-animation'),
+  speed = 700;  
   
   //.colorboxの付いた全ての要素に対して下記の処理を行う
   box.each(function(){

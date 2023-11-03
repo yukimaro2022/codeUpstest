@@ -10,18 +10,18 @@
     }
     
 }
-.card-wrapper {
+.card-item {
     background: var(--white, #FFF);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
     width: 100%;
     margin-top: rem(40);
+    padding: rem(12) rem(16) rem(24);
     @include mq(md) {
         max-width: rem(520);
         margin-top: 0;
+        padding: rem(24) rem(25) rem(20);
     }
 }
-
-
 
 
 .card-wrapper__inner {
@@ -32,18 +32,18 @@
     }
 }
 
-.card-wrapper__bodys {
+.card-item__wrapper {
     display: flex;
     overflow: hidden;
 }
-.card-wrapper__body{
+.card-item__body{
     margin-right: rem(13);
     @include mq(md) {
         margin-right: rem(16);
         margin-top: rem(24);
     }
 }
-.card-wrapper__description{
+.card-item__description{
     display: inline-block;
     @include mq(md) {
         display: flex;
@@ -63,11 +63,11 @@
 }
 
 
-.card-wrapper__info {
+.card-item__info {
     font-size: rem(12);
 }
 
-.card-wrapper__license {
+.card-item__license {
     padding: rem(6) rem(10);
     border: 1px solid $accent-color;
     color: $accent-color;
@@ -77,11 +77,11 @@
         margin-left: auto;
     }
 }
-.card-wrapper__license--width{
+.card-item__license--width{
     max-width: rem(130);
     width: 100%;
 }
-.card-wrapper__body-title {
+.card-item__body-title {
     width: 100%;
     position: relative;
     padding-bottom: rem(3);
@@ -94,7 +94,7 @@
         }
     }
     
-.card-wrapper__body-title:before{
+.card-item__body-title:before{
     content:'';
     position:absolute;
     bottom:0;
@@ -105,7 +105,7 @@
     background-color: $accent-color;
     
 }
-.card-wrapper__text {
+.card-item__text {
     line-height: 1.5;
     margin-top: rem(15);
     overflow: hidden;

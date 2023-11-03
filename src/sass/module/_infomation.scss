@@ -23,3 +23,11 @@
         padding-right: rem(25);  
     }
 }
+
+.infomation__btn{
+    margin-top: rem(40);
+    text-align: center;
+    @include mq(md) {
+        text-align: center;
+    }
+}
