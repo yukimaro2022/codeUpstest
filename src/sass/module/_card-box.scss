@@ -7,7 +7,7 @@
     aspect-ratio: 540 / 356;
     }
 }
-.card-box__img img{
+.slide-animation img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -76,12 +76,12 @@
 .card-box__img{
     overflow: hidden;
 }
-.card-box__img img.is-active{
+.slide-animation img.is-active{
     transform: translateX(0);
     transition: 3s;
 }
 
-.card-box__img img{
+.slide-animation img{
     opacity: 0;
     position: relative;
     z-index: 30;

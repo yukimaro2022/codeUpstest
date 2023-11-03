@@ -4,7 +4,16 @@
     position: relative;
 }
 
-
+.voice__wrapper{
+    margin-top: rem(44);
+    @include mq(md) {
+        margin-top: rem(32);
+        display: grid;
+        gap: rem(40);
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
 .voice:before{
     content:'';
     background-image: url("../images/common/pc-img/voice/voice-background.webp");
