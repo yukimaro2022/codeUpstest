@@ -45,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     @include mq(md) {
-        margin-top: rem(8);
+        margin-top: rem(9);
     }
 }
 .price__list + .price__list{
@@ -101,6 +101,12 @@
 .price__money{
     display:inline-block;
     
+}
+.price__title{
+    @include mq(md) {
+       font-weight: bold;
+       font-size: rem(16);
+    }
 }
 .price__text {
   max-width: rem(253);

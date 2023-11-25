@@ -47,13 +47,18 @@
 }
 
 
-.section-title--white{
+.section-title__main--white{
     color: #333;
     @include mq(md) {
         color: #fff;
     }
 }
 
+.section-title__main--white::first-letter{
+    @include mq(md) {
+        color: #fff;
+    }
+}
 .section-title--white::first-letter{
     @include mq(md) {
         color: $white;

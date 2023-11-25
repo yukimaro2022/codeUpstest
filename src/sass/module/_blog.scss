@@ -45,25 +45,25 @@
     }
 }
 
-.blog__body {
+.blog__wrapper {
     width: 100%;
     @include mq(md) {
         transition: .5s;
     }
 }
-.blog__body + .blog__body{
+.blog__wrapper + .blog__wrapper{
     margin-top: rem(40);
     @include mq(md) {
         margin-top: 0;
     }
 }
-.blog__body:hover{
+.blog__wrapper:hover{
     opacity: .8;
 }
-.blog__body:nth-child(3n){
+.blog__wrapper:nth-child(3n){
     margin-right:0;
 }
-.blog__body:nth-child(n + 4){
+.blog__wrapper:nth-child(n + 4){
     @include mq(md) {
         margin-top: rem(40);
     }

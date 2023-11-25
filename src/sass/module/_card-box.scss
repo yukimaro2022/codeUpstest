@@ -21,7 +21,7 @@
     
 // }
 
-.card-box__title-sub {
+.card-box__title {
     font-weight: 700;
     position: relative;
     font-size: rem(20);
@@ -30,7 +30,7 @@
     }
     
 }
-.card-box__title-sub:after{
+.card-box__title:after{
     content:'';
     position:absolute;
     bottom:0;

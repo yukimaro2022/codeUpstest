@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.voice__wrapper{
+.voice__card{
     margin-top: rem(44);
     @include mq(md) {
         margin-top: rem(32);

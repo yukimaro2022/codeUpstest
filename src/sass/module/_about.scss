@@ -48,7 +48,7 @@
         transform: translateY(-50%);
     }
 }
-.about__title {
+.about__catchCopy {
     font-size: rem(40);
     font-family: $second-font-family;
     color: $accent-color;
@@ -114,5 +114,5 @@
 
 .about__btn{
     margin-top: rem(40);
-   
+   text-align: center;
 }
