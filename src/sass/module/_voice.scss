@@ -14,6 +14,12 @@
     }
     
 }
+.voice__item{
+    padding: rem(12) rem(16) rem(24);
+    @include mq(md) {
+        padding: rem(30) rem(25) rem(20);
+    }
+}
 .voice:before{
     content:'';
     background-image: url("../images/common/pc-img/voice/voice-background.webp");
