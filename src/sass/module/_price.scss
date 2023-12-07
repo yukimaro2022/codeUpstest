@@ -76,14 +76,14 @@
     }
 }
 
-.price__name {
+.price__title {
     font-weight: 700;
     position: relative;
     padding-bottom: rem(4);
     font-size: rem(16);
 }
 
-.price__name:after{
+.price__title:after{
     content:'';
     position:absolute;
     bottom: 0;
@@ -102,7 +102,7 @@
     display:inline-block;
     
 }
-.price__title{
+.price__titleMain{
     @include mq(md) {
        font-weight: bold;
        font-size: rem(16);

@@ -80,7 +80,7 @@
         height: rem(140);
     }
 }
-.contact__Wrapper {
+.contact__wrapper {
     position: relative;
 
     @include mq(md) {
@@ -90,7 +90,7 @@
         padding-right: rem(80);
     }
 }
-.contact__Wrapper:after{
+.contact__wrapper:after{
         content:'';
         position:absolute;
         top:50%;

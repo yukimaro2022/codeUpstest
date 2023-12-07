@@ -115,33 +115,6 @@
 }
 
 
-// .header__drawer-content.is-active{
-//     opacity: 1;
-//     width: 100%;
-//     visibility: visible;
-//     height: 100vh;
-//     padding-bottom: rem(120);
-//     overflow: scroll;
-//     grid-template-rows: rem(242) rem(250) 0;
-// }
-// .header__drawer {
-//     position:absolute;
-//     top: rem(104);
-//     left:rem(15);
-//     height: rem(10);
-//     z-index: 999;
-//     display: grid;
-//     grid-template-columns: repeat(2,1fr);
-//     opacity: 0;
-//     visibility: hidden;
-//  //    transition: .3s;
-//     grid-row-gap: 40px;
-//     column-gap: rem(16);
-//     margin-top: rem(24);
-//     @include mq(md) {
-//          grid-template-columns: repeat(4,1fr);
-//     }   
-//  }
  
  .header__drawer-background{
     transition: .3s;

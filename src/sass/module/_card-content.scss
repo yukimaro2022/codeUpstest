@@ -28,3 +28,7 @@
  .card-content__text{
     margin-top: rem(16);
  }
+ .card-content{
+    display: flex;
+    flex-direction: column;
+ }

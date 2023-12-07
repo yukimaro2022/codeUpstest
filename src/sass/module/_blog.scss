@@ -81,12 +81,7 @@
 .blog__wrapper{
     margin-top: rem(28);
     @include mq(md) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap:rem(40);
         margin-top: rem(86);
     }
 }
-.blog__card{
-    padding: rem(16) rem(16) rem(24);
-}
+
