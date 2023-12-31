@@ -1,37 +1,42 @@
 @use "global" as *;
 
-.footer__item{
-    padding-left: rem(22);
-    margin-top: rem(18); 
-}
 
-.footer__item a{
+.footer-item a{
     display: inline-block;
     font-weight: 700;
     display: inline-block;
     width: 100%;
-}
-.footer__item  a{
     color:$white;
 }
-.footer__item-topSpace{
+
+.footer-tem-topSpace{
     margin-top: rem(34);
     padding-left:rem(22);
 }
-.footer-drawer__menus01{
+
+.footer-items--menus01{
     order:1;
     @include mq(md) {
         order: unset;
     }
 }
-.footer-drawer__menus02{
+.footer__item{
+    padding-left: rem(18);
+    
+}
+.footer__item:not(:first-child){
+    margin-top:rem(18);
+}
+
+.footer-items--menus02{
     order: 3;
     @include mq(md) {
         order: unset;
         margin-left: rem(12);
     }
 }
-.footer-drawer__menus03{
+
+.footer-items--menus03{
     order: 2;
     margin-left: rem(12);
     @include mq(md) {
@@ -40,13 +45,13 @@
     }
 }
 
-.footer-drawer__menus04{
-   order:4; 
-   margin-left: rem(12);
-   @include mq(md) {
-       order: unset;
-       margin-left: 0;
-   }
+.footer-items--menus04{
+    order:4; 
+    margin-left: rem(12);
+    @include mq(md) {
+        order: unset;
+        margin-left: 0;
+    }
 }
 
 .footer-drawer__privacy__lineHeight{

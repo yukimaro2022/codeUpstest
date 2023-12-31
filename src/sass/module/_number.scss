@@ -1,23 +1,21 @@
 @use "global" as *;
 
-.number__section {
+.page-top {
     position: fixed;
     right: rem(15);
     bottom: rem(15);
 }
-.number__section a{
+.page-top a{
     height: inherit;
     display: inline-block;
     width: 100%;
 }
-.number__inner {
 
-}
 
-.number__img{
+.page-top__img{
   position: relative;
 }
-.number__img:before{
+.page-top__img:before{
     content:'';
     position:absolute;
     top:45%;
@@ -50,7 +48,7 @@
     }
 }
 
-.number__img svg{
+.page-top__img svg{
     width: rem(48);
     height: rem(48);
     @include mq(md) {

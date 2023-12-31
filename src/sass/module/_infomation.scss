@@ -1,5 +1,6 @@
 @use "global" as *;
 .information {
+    background-color: #DDF0F1;
     padding-top: rem(80);
     padding-bottom: rem(76);
     @include mq(md) {
@@ -24,10 +25,3 @@
     }
 }
 
-.infomation__btn{
-    margin-top: rem(40);
-    text-align: center;
-    @include mq(md) {
-        text-align: center;
-    }
-}

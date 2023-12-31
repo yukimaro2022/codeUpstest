@@ -21,18 +21,15 @@
     color:$accent-color;
 }
 
-
-.section-title__contact{
+.section-title__main.section-title__main--contact{
     font-size: rem(80);
     line-height: 1;
-    font-family: $second-font-family;
-    font-weight: 400;
     text-indent: -.1em;
     @include mq(md) {
         text-indent: 0;
     }
 }
-.section-title__contact::first-letter{
+.section-title__main--contact::first-letter{
     color: $accent-color;
 }
 
