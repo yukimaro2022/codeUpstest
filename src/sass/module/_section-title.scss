@@ -1,5 +1,4 @@
 @use "global" as *;
-
 .section-title {
     text-align: center;
     line-height: 1.3;
@@ -8,7 +7,6 @@
         line-height: 1.1;
     }
 }
-
 .section-title__main {
     font-weight: 400;
     font-family: $second-font-family;
@@ -42,15 +40,12 @@
     display:inline-block;
     
 }
-
-
 .section-title__main--white{
     color: #333;
     @include mq(md) {
         color: #fff;
     }
 }
-
 .section-title__main--white::first-letter{
     @include mq(md) {
         color: #fff;

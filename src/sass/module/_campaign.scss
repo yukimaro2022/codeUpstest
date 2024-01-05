@@ -1,9 +1,4 @@
 @use "global" as *;
-
-.campaign {
-    
-}
-
 .campaign__container{
     margin-right: calc(50% - 50vw);
     margin-top: rem(28);
@@ -25,22 +20,6 @@
 .campaign__content figure img{
     aspect-ratio: 280/188;
 }
-
-.swiper-button__wrapper .swiper-button-prev,
-.swiper-button__wrapper .swiper-button-next{
-    width: rem(80);
-    height: rem(80);
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after{
-    display: none;
-   
-}
-.swiper-button-next{
-   
-}
-
 .campagin__card{
     height: auto;
     width: 100%;

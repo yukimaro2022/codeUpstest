@@ -1,9 +1,7 @@
 @use "global" as *;
-
 .voice {
     position: relative;
 }
-
 .voice__card{
     margin-top: rem(44);
     @include mq(md) {
@@ -33,7 +31,6 @@
         top: rem(-122);
     }
 }
-
 .voice__inner:after{
     content:'';
     background-image:url("../images/common/pc-img/background-img/voice-imge2.webp");
@@ -59,5 +56,3 @@
         margin-top: rem(80);
     }
 }
-
-

@@ -1,8 +1,0 @@
-@use "global" as *;
-
-
-.js-fadeIn .is-inview{
-    opacity: 1;
-    transform: translateX(0%);
-    transition:opacity .5s,transform .5s;
-}

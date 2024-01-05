@@ -49,13 +49,6 @@
         row-gap: rem(40);
     }
 }
-
-
-.footer__drawer-background.drawer-background.is-active{
-    position: unset;
-    visibility: visible;
-}
-
 .footer__sns{
     margin-top: rem(14);
     display: flex;
@@ -80,7 +73,6 @@
     }
    
 }
-
 .footer__copy{
     margin-top: rem(34);
     @include mq(md) {
@@ -97,9 +89,6 @@
     @include mq(md) {
         font-size: rem(14);
     } 
-}
-.footer__items{
-   
 }
 .footer__items:nth-child(2n){
     margin-top: rem(32);

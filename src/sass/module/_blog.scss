@@ -1,6 +1,11 @@
 @use "global" as *;
-
-
+.blog{
+    position: relative;
+    padding-top: rem(80);
+    @include mq(md) {
+        padding-top: rem(100);
+    }
+}
 
 .blog__inner.inner{
     padding-right: rem(21);
@@ -44,7 +49,6 @@
         z-index: -1;
     }
 }
-
 .blog__wrapper {
     width: 100%;
     @include mq(md) {
@@ -68,8 +72,6 @@
         margin-top: rem(40);
     }
 }
-
-
 .blog__btn{
     margin-top: rem(40);
     text-align: center;
@@ -77,11 +79,9 @@
         margin-top: rem(80);
     }
 }
-
 .blog__wrapper{
     margin-top: rem(28);
     @include mq(md) {
         margin-top: rem(86);
     }
 }
-

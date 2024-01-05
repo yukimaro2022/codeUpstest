@@ -1,5 +1,4 @@
 @use "global" as *;
-
 .swiper-button{
     position: absolute;
     top:0;
@@ -11,7 +10,6 @@
     }
     
 }
-
 .swiper-button__prev{
     @include mq(md) {
         background-image: url("../images/common/pc-img/top/button1.webp");
@@ -27,7 +25,6 @@
     }
    
 }
-
 .swiper-button__next{
     @include mq(md) {
         background-image: url("../images/common/pc-img/top/button2.webp");
@@ -41,4 +38,14 @@
         top: 0;
         right: 0;
     }
+}
+.swiper-button__wrapper .swiper-button-prev,
+.swiper-button__wrapper .swiper-button-next{
+    width: rem(80);
+    height: rem(80);
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    display: none;
+   
 }

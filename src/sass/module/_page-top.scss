@@ -1,17 +1,18 @@
 @use "global" as *;
-
 .page-top {
     position: fixed;
     right: rem(15);
     bottom: rem(15);
+    display: none;
+}
+.page-top.is-active{
+    display:block;
 }
 .page-top a{
     height: inherit;
     display: inline-block;
     width: 100%;
 }
-
-
 .page-top__img{
   position: relative;
 }
@@ -35,7 +36,6 @@
        height: rem(40);
     }
 }
-
 .number-svg:before{
     content: "";
     width: rem(48);
@@ -47,7 +47,6 @@
         height: rem(80);
     }
 }
-
 .page-top__img svg{
     width: rem(48);
     height: rem(48);

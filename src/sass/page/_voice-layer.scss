@@ -1,5 +1,4 @@
 @use "global" as *;
-
 .voice-layer{
     margin-top: rem(80);
     @include mq(md) {

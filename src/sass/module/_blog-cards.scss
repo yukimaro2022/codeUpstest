@@ -1,5 +1,4 @@
 @use "global" as *;
-
 .blog-cards{
     @include mq(md) {
         display: grid;

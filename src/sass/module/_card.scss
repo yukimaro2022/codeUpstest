@@ -1,7 +1,4 @@
 @use "global" as *;
-
-
-
 .card__body {
     padding:rem(14) rem(16) rem(18);
     display: flex;
@@ -13,7 +10,6 @@
     }
     
 }
- 
 .card__category {
     font-size: rem(12);
     color: $accent-color;
@@ -26,7 +22,6 @@
         padding: rem(6) rem(15);
     }
 }
-
 .card__title {
     margin-top: rem(3);
     padding-bottom:rem(10);
@@ -51,7 +46,6 @@
 .card__price {
     height: 100%;
 }
-
 .card__info {
     margin-top: rem(8);
     font-weight: 400;
@@ -63,7 +57,6 @@
         text-indent: -0.8em;
     }
 }
-
 .card__lowPrice {
     font-size: rem(28);
     color: $accent-color;
@@ -87,7 +80,6 @@
         margin-top: rem(8);
     }
 }
-
 .card__highPrice{
     position: relative;
     text-align: center;
@@ -96,7 +88,6 @@
         font-size: rem(20);
     }
 }
-
 .card__highPrice:before{
     content:'';
     position:absolute;
