@@ -15,3 +15,6 @@
 .footer__item:not(:first-child){
     margin-top:rem(18);
 }
+.footer__item--color.footer__item{
+    color:#333;
+}

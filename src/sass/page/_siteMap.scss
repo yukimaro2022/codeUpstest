@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.siteMap{
+    margin-top: rem(90);
+    position: relative;
+}
+.siteMap:before{
+    background-image: url(../images/common/pc-img/voice/voice-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: inline-block;
+    height: rem(55);
+    left: calc(50% - min(49vw, 38.75rem));
+    position: absolute;
+    top: 56px;
+    width: rem(125);
+    @include mq(md) {
+            display:none;
+    }
+}

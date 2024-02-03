@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.privacy{
+    margin-top:rem(52);
+    position: relative;
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+.privacy__title{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+.privacy:before{
+    content:"";
+    display:inline-block;
+    position: absolute;
+    left: calc(50% - min(49vw, 38.75rem));
+    top: -29px;
+    background-image: url(../images/common/pc-img/voice/voice-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:rem(120);
+    height:rem(55);
+    @include mq(md) {
+        width:rem(301);
+        height:rem(138);
+        left: calc(50% - min(49vw, 42.75rem));
+    }
+}
+.privacy__body{
+    margin-top: rem(40);
+}

@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.page-404_inner{
+    text-align: center;
+    padding-bottom: rem(51);
+    position: relative;
+}
+.page-404__img{
+    max-width: rem(654);
+    height:rem(564);
+    width: 100%;
+    height: 100%;
+    display:inline-block;
+    display:inline-block;
+}
+.page-404__btn{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}

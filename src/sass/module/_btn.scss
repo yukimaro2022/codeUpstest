@@ -13,7 +13,12 @@
         width: 100%;
     }
 }
-
+.btn--color.btn:before{
+    border: 1px solid #fff;
+}
+.btn__span--color .btn span:before{
+    border:1px solid #408F95;
+}
 .btn:before{
     border: 1px solid $accent-color;
     content: "";
@@ -93,4 +98,11 @@
     transform:translate(0,-50%);
     display:inline-block;
     z-index: 10;
+}
+.btn__span--color.btn__span{
+    color: #408F95;
+    background-color: #fff;
+}
+.btn__span--color.btn__span:before{
+    background-image: url("../images/common/pc-img/btn/btn-arrow-green.webp");
 }

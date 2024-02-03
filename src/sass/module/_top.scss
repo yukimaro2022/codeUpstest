@@ -15,6 +15,7 @@
     text-align: center;
     z-index: 9;
    line-height: 1.3;
+   width: 100%;
 }
 
 .top__titleMain{
@@ -27,6 +28,17 @@
         letter-spacing: .54em;
         font-size: rem(80);
     }
+}
+.top__titleMain--fzNormal.top__titleMain{
+    font-size: rem(40);
+    letter-spacing: 0;
+    text-indent:0;
+    @include mq(md) {
+        font-size: rem(80);
+    }
+}
+.top__titleMain.top__titleMain--fzBig{
+    font-size: rem(80);
 }
 .top__titleSub{
     font-size: rem(20);

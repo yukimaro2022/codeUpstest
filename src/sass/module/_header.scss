@@ -5,6 +5,7 @@
     position: fixed;
     z-index: 9999;
     background: rgba(13, 41, 54, 0.68);
+    top: 0;
     @include mq(md) {
         height: rem(90);
     }
