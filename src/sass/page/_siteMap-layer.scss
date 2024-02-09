@@ -2,6 +2,10 @@
 
 .siteMap-layer{
     position: relative;
+    margin-top: rem(52);
+    @include mq(md) {
+        margin-top: rem(150);
+    }
 }
 .siteMap-layer:before{
     background-image: url(../images/common/pc-img/);

@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.campaign-body__wrapper{
+    flex-direction: column;
+}
+.campaign-body__body{
+    display:flex;
+    align-items: center;
+}
+.campaign-body__text{
+    font-weight: 100;
+    display: none;
+    font-size: rem(16);
+    @include mq(md) {
+        display: block;
+    }
+}

@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.contact-page{
+    margin-top: rem(52);
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+.contact-page__body{
+    text-align: center;
+}
+.contact-page__text{
+    margin: rem(40) auto;
+    max-width: rem(622);
+}

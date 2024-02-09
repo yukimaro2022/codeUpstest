@@ -72,7 +72,7 @@
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     margin-top: rem(6);
     @include mq(md) {
@@ -98,4 +98,26 @@
     height:rem(2);
     background-color: red;
    left: 50%;
+}
+.card__contact{
+    display: block;
+    margin: rem(8);
+}
+.card__timeArea{
+    text-align: center;
+    display:none;
+    @include mq(md) {
+        margin-top: rem(32);
+        display:block;
+    }
+}
+.card__date,
+.card__contact{
+    color: #408F95;
+}
+
+.card__btn{
+    @include mq(md) {
+        margin-top: rem(16);
+    }
 }

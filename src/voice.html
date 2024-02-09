@@ -29,7 +29,7 @@
     <!-- URL適正化 -->
     <link rel="canonical" href="http://example.com/"> 
   </head>
-  <body id="privacy-site">
+  <body>
     <header class="header">
       <div class="header__inner">
           <div class="header__left">
@@ -167,17 +167,14 @@
     <div id="top" class="top">
       <div class="top__inner">
         <!-- Slider main container -->
-        <div class="top__title">
-          <h2 class="top__titleMain top__titleMain--fzNormal">Privacy Policy</h2>
-        </div>
         <div class="top__body">
         <!-- Additional required wrapper -->
         <div class="top__wrapper">
             <!-- Slides -->
-            <div class="top__img">
+            <div class="top__img top__img--size">
               <picture>
-                <source srcset="./assets/images/pc-img/privacy/Rectangle 1.jpg" media="(min-width:768px)" type="image/jpg">
-                <img src="./assets/images/common/sp-img/privacy/Rectangle 2.jpg"  alt="TOPイメージ">
+                <source srcset="../assets/images/common/pc-img/voice/voice-img-FV.webp" media="(min-width:768px)" type="image/jpg">
+                <img src="../assets/images/common/sp-img/voice/voice-img.webp"  alt="TOPイメージ">
               </picture>
             </div>
           </div>
@@ -185,25 +182,174 @@
       </div>
     </div>
     <!-- top完了 -->
+    <div class="bread">
+      <div class="bread__inner inner">
+        <ul class="bread__items">
+           <li class="bread__item"><a href="">TOP</a></li>
+           <li class="bread__item"><a href="">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- top完了 -->
     <main>
-     <!-- パンくず -->
-     <div class="bread">
-       <ul class="bread__items">
-          <li class="bread__item"><a href="">TOP</a></li>
-          <li class="bread__item"><a href="">プライバシーポリシー</a></li>
-       </ul>
-     </div>
-     <section class="privacy background-img">
-        <div class="privacy__inner inner">
-            <h3 class="privacy__title">プライバシーポリシー</h3>
-            <div class="privacy__body">
-              <picture>
-                <source class="pc__img" srcset="../assets/images/common/pc-img/privacy/privacy-text.webp" media="(min-width:1000px)" type="image/jpg">
-                <source class="sp__img" srcset="../assets/images/common/sp-img/privacy/privacy-img.webp" media="(min-width:250px)" type="image/jpg">
-                <img src="../assets/images/common/sp-img/privacy/privacy-img.webp" alt="プライバシーテキスト">
-              </picture>
+        <div class="voice-section">
+            <div class="voice-section__inner inner">
+                <div class=" voice-section__nav campaign-nav background-img">
+                    <ul class="campaign-nav__items">
+                      <li class="campaign-nav__item">
+                        <a class="is-active" href="">
+                          ALL
+                        </a>
+                      </li>
+                      <li class="campaign-nav__item">
+                        <a href="">
+                          ライセンス講習
+                        </a>
+                      </li>
+                      <li class="campaign-nav__item">
+                        <a href="">
+                          ファンダイビング
+                        </a>
+                      </li>
+                      <li class="campaign-nav__item">
+                        <a href="">
+                          体験ダイビング
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="voice__body">
+                    <div class="voice__items card-items">
+                        <article class="card-item">
+                          <div class="card-item__box">
+                            <div class="card-item__body">
+                              <div class="card-item__description">
+                                <p class="card-item__info">20代(女性)</p>
+                                <p class="card-item__license">ライセンス講習</p>
+                              </div>
+                              <h3 class="card-item__title">ここにタイトルが入ります。ここにタイトル</h3>
+                            </div>
+                            <figure class="card-item__img inview">
+                              <img width="150" height="118" loading="lazy" src="./assets/images/common/sp-img/voice/voice-sp1.webp" alt="女性の画像">
+                            </figure>
+                          </div>
+                            <p class="card-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br> ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </article>
+                        <article class="card-items__item card-item">
+                          <div class="card-item__box">
+                            <div class="card-item__body">
+                              <div class="card-item__description">
+                                <p class="card-item__info">20代(男性)</p>
+                                <p class="card-item__license card-item__license--width">ファンダイビング</p>
+                              </div>
+                              <h3 class="card-item__title">ここにタイトルが入ります。ここにタイトル</h3>
+                            </div>
+                            <figure class="card-item__img inview">
+                              <img width="150" height="118" loading="lazy" src="./assets/images/common/sp-img/voice/voice-sp2.webp" alt="男性の画像">
+                            </figure>
+                          </div>
+                            <p class="card-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br> ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </article>
+                        <article class="card-items__item card-item">
+                          <div class="card-item__box">
+                            <div class="card-item__body">
+                              <div class="card-item__description">
+                                <p class="card-item__info">20代(男性)</p>
+                                <p class="card-item__license card-item__license--width">ファンダイビング</p>
+                              </div>
+                              <h3 class="card-item__title">ここにタイトルが入ります。ここにタイトル</h3>
+                            </div>
+                            <figure class="card-item__img inview">
+                              <img width="150" height="118" loading="lazy" src="./assets/images/common/sp-img/voice/voice02.webp" alt="男性の画像">
+                            </figure>
+                          </div>
+                            <p class="card-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br> ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </article>
+                        <article class="card-items__item card-item">
+                          <div class="card-item__box">
+                            <div class="card-item__body">
+                              <div class="card-item__description">
+                                <p class="card-item__info">20代(男性)</p>
+                                <p class="card-item__license card-item__license--width">ファンダイビング</p>
+                              </div>
+                              <h3 class="card-item__title">ここにタイトルが入ります。ここにタイトル</h3>
+                            </div>
+                            <figure class="card-item__img inview">
+                              <img width="150" height="118" loading="lazy" src="./assets/images/common/sp-img/voice/voice01.webp" alt="男性の画像">
+                            </figure>
+                          </div>
+                            <p class="card-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br> ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </article>
+                        <article class="card-items__item card-item">
+                          <div class="card-item__box">
+                            <div class="card-item__body">
+                              <div class="card-item__description">
+                                <p class="card-item__info">20代(男性)</p>
+                                <p class="card-item__license card-item__license--width">ファンダイビング</p>
+                              </div>
+                              <h3 class="card-item__title">ここにタイトルが入ります。ここにタイトル</h3>
+                            </div>
+                            <figure class="card-item__img inview">
+                              <img width="150" height="118" loading="lazy" src="./assets/images/common/sp-img/voice/voice03.webp" alt="男性の画像">
+                            </figure>
+                          </div>
+                            <p class="card-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br> ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </article>
+                        <article class="card-items__item card-item">
+                          <div class="card-item__box">
+                            <div class="card-item__body">
+                              <div class="card-item__description">
+                                <p class="card-item__info">20代(男性)</p>
+                                <p class="card-item__license card-item__license--width">ファンダイビング</p>
+                              </div>
+                              <h3 class="card-item__title">ここにタイトルが入ります。ここにタイトル</h3>
+                            </div>
+                            <figure class="card-item__img inview">
+                              <img width="150" height="118" loading="lazy" src="./assets/images/common/sp-img/voice/voice04.webp" alt="男性の画像">
+                            </figure>
+                          </div>
+                            <p class="card-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br> ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </article>
+                    </div>
+                    <div class="navigation">
+                        <div class="navigation__inner inner">
+                          <div class="navigation__wrapper">
+                            <div class="navigation__btn  prev">
+                              <a href=""></a>
+                            </div>
+                            <ul class="navigation__numbers">
+                              <li class="navigation__number is-active">
+                                <a href="">1</a>
+                              </li>
+                              <li class="navigation__number">
+                                <a href="">2</a>
+                              </li>
+                              <li class="navigation__number">
+                                <a href="">3</a>
+                              </li>
+                              <li class="navigation__number">
+                                <a href="">4</a>
+                              </li>
+                              <li class="navigation__number">
+                                <a href="">5</a>
+                              </li>
+                              <li class="navigation__number">
+                                <a href="">6</a>
+                              </li>
+                            </ul>
+                            <div class="navigation__btn next">
+                              <a href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+      <!--  -->
+      <!-- campaign完了 -->
+
+
         <!-- contact -->
         <section id="contact" class="contact section-layer">
           <div class="contact__inner inner">
@@ -236,7 +382,6 @@
             </div>
           </div>
         </section>
-     </section>
         <!-- ボタン完了 -->
         <div id="page-top" class="page-top">
           <figure class="page-top__img">

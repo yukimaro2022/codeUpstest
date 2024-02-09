@@ -47,6 +47,12 @@
         height: rem(80);
     }
 }
+.top__img--size{
+        aspect-ratio: 375/460;
+    @include mq(md) {
+        aspect-ratio: 1440 / 548;
+}
+    }
 .page-top__img svg{
     width: rem(48);
     height: rem(48);

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.campagign-page__wrapper.swiper-wrapper{
+    display:grid;
+    gap:rem(40);
+    @include mq(md) {
+     grid-template-columns: 1fr 1fr;
+     gap:rem(40) rem(80);
+    }
+}

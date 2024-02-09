@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.background-img{
+    position: relative;
+}
+
+.background-img:before{
+    content:"";
+    display:inline-block;
+    position: absolute;
+    left: calc(50% - min(49vw, 38.75rem));
+    top: rem(-30);
+    background-image: url(../images/common/pc-img/voice/voice-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:rem(120);
+    height:rem(55);
+    @include mq(md) {
+        width:rem(301);
+        height:rem(138);
+        left: calc(50% - min(49vw, 38.75rem));
+        top: rem(-70);
+    }
+}

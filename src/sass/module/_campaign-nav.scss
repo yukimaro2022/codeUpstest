@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.campaign-nav{
+    margin-top: rem(52);
+    text-align: center;
+    @include mq(md) {
+        margin-top: rem(150);
+        text-align: left;
+    }
+}
+.campaign-nav__items{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   max-width: rem(345);
+   width: 100%;
+   grid-row-gap:rem(16);
+   @include mq(md) {
+       max-width: rem(774);
+       justify-content: left;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-row-gap:0;
+    }
+}
+
+
+.campaign-nav__item a{
+    width: rem(162);
+    max-width: 100%;
+    text-align: center;
+    display:inline-block;
+    padding:rem(5)rem(16);
+    border: 1px solid #408F95;
+    font-size: rem(14);
+    color: #408F95;
+}
+.campaign-nav__item .is-active{
+    background-color: #408F95;
+    border: 1px solid #fff;
+    color: #fff;
+}

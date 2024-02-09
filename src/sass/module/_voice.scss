@@ -2,6 +2,9 @@
 .voice {
     position: relative;
 }
+.voice__body{
+    margin-top: rem(40);
+}
 .voice__card{
     margin-top: rem(44);
     @include mq(md) {

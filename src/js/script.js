@@ -65,7 +65,30 @@ jQuery('.drawer__btns').on('click',function(){
     
   });
 
-  
+  jQuery(function(){
+    
+    const swiper__campaign = new Swiper('.js-campaignPage', {
+      // direction: 'horizontal',
+      spaceBetween: 40, // 768px以上の場合のspaceBetweenのデフォルト値
+      loop: true,
+      loopAdditionalSlides: 1,
+      loopedSlides: 2,
+      initialSlide: 0, // 最初に表示されるスライドのインデックス
+      breakpoints: {
+        // 768px以上では2列表示
+        768: {
+          slidesPerView: 2,
+        },
+        // 768px以下では1列表示、spaceBetweenも調整可能
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 24, // 768px以下の場合のspaceBetween
+        }
+      },
+    });
+    
+    
+  });
   // #から始まるURLがクリックされた時
   jQuery('a[href^="#"]').click(function() {
     
