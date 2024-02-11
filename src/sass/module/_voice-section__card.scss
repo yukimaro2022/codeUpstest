@@ -3,3 +3,37 @@
 .voice-section__card{
     margin-top: rem(40);
 }
+.voice-section__items{
+    display:flex;
+    justify-content: center;
+}
+.voice-section__body{
+    border: 1px solid #408F95;
+    padding: rem(24);
+    margin-top: rem(16);
+    @include mq(md) {
+        display: flex;
+    }
+}
+.voice-section__bodyWrapper{
+    @include mq() {
+        margin-right: rem(48);
+        width: calc(492 / 1080 * 100%);
+    }
+}
+.voice-section__bodyTitle{
+    font-size: rem(24);
+    border-bottom: 1px solid #408F95;
+    text-align: left;
+}
+.voice-section__bodyText{
+    margin-top: rem(8);
+    text-align: left;
+    line-height: calc(24 / 16);
+}
+.voice-section__body figure{
+    margin-top: rem(8);
+    @include mq(md) {
+        width: calc(492 / 1080 * 100%);
+    }
+}

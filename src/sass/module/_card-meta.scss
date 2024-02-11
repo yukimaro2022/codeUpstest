@@ -22,3 +22,9 @@
  .blog-card__text{
     margin-top: rem(16);
  }
+ .blog-card--smallSize{
+     width: 100%;
+    @include mq(md) {
+        max-width: rem(333);
+    }
+ }

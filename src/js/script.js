@@ -186,4 +186,48 @@ $(function () {
       });
     }
   });
+
+  // FAQ
+  $('.faq-section__container').click(function() {
+    // .faq-section__priceTitleにis-activeクラスの追加/削除
+    $(this).find('.faq-section__priceTitle').toggleClass('is-active');
+    
+    // .faq-section_answerにis-activeクラスの追加/削除
+    $(this).find('.faq-section_answer').slideToggle().toggleClass('is-active');
+});
+
+// ダイビングタブ切り替え
+$('.js-voice-section:not(:first)').hide();
+$(document).ready(function() {
+    // 最初にページが読み込まれた時に実行される処理
+    // すべての.js-voice-sectionを非表示にする
+    $('.js-voice-section').hide();
+
+    // 最初の.js-voice-sectionだけを表示する
+    $('.js-voice-section').first().show();
+
+    // 最初のナビゲーションアイテムにis-activeクラスを追加する
+    $('.campaign-nav__item a').removeClass('is-active'); // 他のすべてからis-activeを削除
+    $('.campaign-nav__item a').first().addClass('is-active'); // 最初のアイテムに追加
+
+    // 既存のクリックイベントハンドラー...
+    $('.js-voiceNav-item a').on('click', function(e) {
+        e.preventDefault(); // デフォルトのアンカー動作を防止
+        // すべての.voice-section__bodyを非表示にする
+        $('.js-voice-section').hide();
+
+        // すべてのaタグからis-activeクラスを削除
+        $('.campaign-nav__item a').removeClass('is-active');
+
+        // クリックされたaタグにis-activeクラスを追加
+        $(this).addClass('is-active');
+
+        // クリックされた項目のインデックスを取得
+        var index = $('.js-voiceNav-item').index($(this).parent());
+
+        // 対応する.js-voice-sectionを表示
+        $('.js-voice-section').eq(index).show();
+    });
+});
+
 });

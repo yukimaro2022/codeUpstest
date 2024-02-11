@@ -16,10 +16,11 @@
     background-size: cover;
     width:rem(120);
     height:rem(55);
+    z-index: -1;
     @include mq(md) {
         width:rem(301);
         height:rem(138);
-        left: calc(50% - min(49vw, 38.75rem));
-        top: rem(-70);
+        left: calc(50% - min(50vw, 38.75rem));
+        top: rem(-100);
     }
 }

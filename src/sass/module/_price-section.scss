@@ -1,0 +1,111 @@
+@use "global" as *;
+.price-section{
+    margin-top: rem(52);
+    @include mq(md) {
+        margin: rem(150);
+    }
+}
+.price-section__wrapper{
+    @include mq(md) {
+        max-width: rem(700);
+        width: 100%;
+        margin: auto;
+    }
+}
+.price-section__priceTitle{
+   background-color: #408F95;
+   text-align:center;
+   padding: rem(8);
+   @include mq(md) {
+       max-width: rem(200);
+       width: 100%;
+       padding: rem(40) rem(8);
+   }
+}
+.price-section__container:nth-child(2) > .price-section__priceTitle{
+    @include mq(md) {
+        padding-top: rem(70);
+    }
+}
+.price-section__container:nth-child(3) > .price-section__priceTitle{
+    @include mq(md) {
+        padding-top: rem(70);
+    }
+}
+.price-section__priceTitle span{
+    color: #fff;
+    position: relative;
+    padding-left:rem(30);
+    display:inline-block;
+    font-size: rem(16);
+    @include mq(md) {
+        padding-left: 0;
+        padding-bottom: rem(72);
+   }
+}
+.price-section__priceTitle span:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width:rem(22);
+    height:rem(20);
+    background-image: url("../images/common/sp-img/price/background-img-price.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @include mq(md) {
+        bottom: 0;
+        top:unset;
+        left: 50%;
+        transform: translateX(-50%);
+        width: rem(64);
+        height: rem(64);
+    }
+}
+.price-section__body{
+    display: flex;
+    
+}
+.price-section__wrapper:not(:last-child){
+    border-bottom: 1px solid #408F95;
+}
+.price-section__body dt{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    border-right: 1px solid #408F95;
+     padding: rem(18) rem(16);
+    @include mq(md) {
+        max-width: rem(338);
+        width: calc(340 / 501 * 100%);
+        text-align: left;
+    }
+}
+.price-section__body dd{
+ align-self: center;
+ max-width: rem(106);
+ width: 100%;
+ text-align: right;
+  padding: rem(18) rem(16);
+  @include mq(md) {
+      max-width: rem(162);
+      text-align: right;
+  }
+}
+.price-section__container{
+    border :1px solid #408F95;
+    @include mq(md) {
+        display: flex;
+    }
+}
+.price-section__container:nth-child(n + 2){
+margin-top: rem(40);
+}
+.price-section__content{
+    @include mq(md) {
+       width: 100%; 
+    }
+}
