@@ -8,8 +8,8 @@
     content:"";
     display:inline-block;
     position: absolute;
-    left: calc(50% - min(49vw, 38.75rem));
-    top: rem(-30);
+    left: calc(50% - min(46vw, 38.75rem));
+    top: rem(-22);
     background-image: url(../images/common/pc-img/voice/voice-background.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +21,6 @@
         width:rem(301);
         height:rem(138);
         left: calc(50% - min(50vw, 38.75rem));
-        top: rem(-100);
+        top: rem(-70);
     }
 }

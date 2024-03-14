@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.aboutUs-body__img1{
+   display:none;
+    @include mq(md) {
+        margin-bottom: rem(60);
+        aspect-ratio: 400 / 600;
+        max-width: rem(400);
+        width: auto;
+         height: auto;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+}
+.aboutUs-body__img2{
+    height: auto;
+    display: inline-block;
+    left: rem(64);
+    height: auto;
+    @include mq(md) {
+        left: calc(199 / 1080 * 100%);
+        aspect-ratio: 880 / 580;
+        width: auto;
+        position: absolute;
+    }
+}

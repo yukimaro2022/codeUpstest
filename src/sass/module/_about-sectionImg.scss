@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.about-sectionImg > .about__img1{
+    display:none;
+    @include mq(md) {
+        display:block
+    }
+}
+.about-sectionImg > .about__img2{
+    position: unset;
+    @include mq(md) {
+        position: absolute;
+    }
+}
+.about-sectionImg.about__body:after{
+    display:none;
+}

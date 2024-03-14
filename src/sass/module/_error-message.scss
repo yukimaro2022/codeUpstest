@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.error-message{
+    position: absolute;
+    top: rem(-60);
+    font-size: rem(14);
+    width:calc(224 / 375 * 100%);
+    left:55%;
+    transform:translateX(-50%);
+    @include mq(md) {
+        left:72%; 
+    }
+}

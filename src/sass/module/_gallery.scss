@@ -1,0 +1,67 @@
+@use "global" as *;
+.gallery{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(120);
+    }
+}
+.gallery__body {
+    gap: rem(8);
+    display: block;
+    @include mq(md) {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2列のレイアウト */
+            grid-auto-rows: auto; /* 行の高さはコンテンツに基づく */
+            grid-template-areas: 
+                "left right1"
+                "left right2"; /* エリアの配置を定義 */
+            
+        }
+}
+
+.gallery__img:nth-child(1) { grid-area: left; } /* 最初の画像を左側に配置 */
+.gallery__img:nth-child(2) { grid-area: right1; } /* 2番目の画像を右上に配置 */
+.gallery__img:nth-child(3) { grid-area: right2; } /* 3番目の画像を右下に配置 */
+
+.gallery__body--reverse.gallery__body {
+    @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2列のレイアウト */
+    grid-auto-rows: auto; /* 行の高さはコンテンツに基づく */
+    grid-template-areas: 
+        "left1 right"
+        "left2 right"; /* エリアの配置を更新 */
+    }
+}
+
+.gallery__body--reverse .gallery__img:nth-child(1) { grid-area: left1; } /* 最初の画像を左上に配置 */
+.gallery__body--reverse .gallery__img:nth-child(2) { grid-area: left2; } /* 2番目の画像を左下に配置 */
+.gallery__body--reverse .gallery__img:nth-child(3) { grid-area: right; } /* 3番目の画像を右側に配置（縦長） */
+
+    /* 最初の画像を右側に配置（縦長） */
+
+.gallery__img:nth-child(n){
+    margin-top: rem(8);
+}
+.gallery__wrapper{
+    margin-top: rem(36);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+.gallery__img--02,
+.gallery__img--03,
+.gallery__img--04,
+.gallery__img--05{
+    @include mq(md) {
+        aspect-ratio: 580 / 369;
+    }
+}
+.gallery__img--01,
+.gallery__img--06{
+    @include mq(md) {
+        max-width: rem(492);
+        width: 100%;
+    }
+}
+

@@ -33,7 +33,7 @@
 }
 .about__text{
     margin-top: rem(40);
-    top: 49%;
+    top: 46%;
     @include mq(md) {
         display: flex;
         margin-top: 0;
@@ -59,10 +59,22 @@
         width: 100%;
     }
 }
+.about__catchCopy--center{
+    position: absolute;
+    left: rem(24);
+    top: rem(24);
+    color: #fff;
+    z-index: 5;
+    @include mq(md) {
+       position: unset;
+    }
+}
 .about__box{
     width: 100%;
+    margin-top: 0;
     @include mq(md) {
         padding: 0 rem(30) 0 rem(20);
+        margin-top: rem(50);
     }
 }
 
@@ -75,7 +87,12 @@
     }
 }
 
-
+.about__info--noDisplay{
+    display:none;
+    @include mq(md) {
+        display: block;
+    }
+}
 .about__img1{
     height: auto;
     display: inline-block;

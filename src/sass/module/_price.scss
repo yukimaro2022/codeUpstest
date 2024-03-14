@@ -77,10 +77,11 @@
         margin-top: rem(0);
     }
 }
-.price__title {
+.price__listTitle {
     font-weight: 700;
     font-size: rem(16);
     padding-bottom: rem(8);
+    border-bottom:1px solid #408F95;
     @include mq(md) {
         padding-bottom: rem(4);
         

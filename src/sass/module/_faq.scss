@@ -49,7 +49,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.faq-section_answer{
+.faq-section__answer{
     padding: rem(24) rem(16);
     border: 1px solid #408F95;
     @include mq(md) {
@@ -58,7 +58,7 @@
         display: none
     }
 }
-.faq-section_answer.is-active{
+.faq-section__answer.is-active{
    display:block;
 }
 .faq-section__text{

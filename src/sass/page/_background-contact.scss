@@ -10,9 +10,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     position:absolute;
-    top:-3px;
+    top:rem(-0);
     transform:translate(-50%,-50%);
-    right: calc(50% - min(57vw, 51rem));
+    right: calc(50% - min(48vw, 51rem));
     display:inline-block;
     max-width: rem(140);
     width: 100%;
@@ -21,8 +21,9 @@
         background-image: url("../images/common/pc-img/price/price-background.webp");
         max-width: rem(300);
         width: 100%;
-        top: rem(20);
+        top: rem(-5);
         z-index: 1;
         height: rem(140);
+        right: calc(50% - min(57vw, 49rem));
     }
 }

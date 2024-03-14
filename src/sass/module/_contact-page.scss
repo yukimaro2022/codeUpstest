@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .contact-page{
-    margin-top: rem(52);
+    margin-top: rem(132);
     @include mq(md) {
         margin-top: rem(150);
     }
@@ -13,3 +13,194 @@
     margin: rem(40) auto;
     max-width: rem(622);
 }
+.contact-page__wrapper{
+    text-align: left;
+    padding-bottom: rem(24);
+    border-bottom: 1px dotted #408F95;
+    @include mq(md) {
+        display: flex;
+    }
+}
+.contact-page__wrapper:nth-child(n + 1){
+    margin-top: rem(24);
+}
+.contact-page__wrapperTitle{
+    @include mq(md) {
+        margin-right: rem(55);
+    }
+}
+.contact-page__from{
+    max-width: rem(345);
+    margin: auto;
+    @include mq(md) {
+        max-width: rem(700);
+    }
+}
+.contact-page__wrapper > label,
+.contact-page__wrapper > .contact-page__label{
+    @include mq(md) {
+        margin-right:auto;
+        align-self: center;
+    }
+}
+
+.contact-page input{
+    width: calc(345 / 375 * 100%);
+    width: 480px;
+    width: 100%;
+    border: 1px solid;
+    padding: rem(7) rem(6);
+    margin-top: rem(16);
+    @include mq(md) {
+        width: calc(480 / 700 * 100%);
+        margin-top: 0;
+    }
+}
+.contact-page__tab{
+    background: #C94800;
+    color: #fff;
+    font-size: rem(12);
+    padding: rem(1) rem(16);
+    margin-left: rem(8);
+    display: inline-block;
+}
+.contact-page__container{
+    margin-top: rem(16);
+    @include mq(md) {
+        margin-top: rem(3);
+    }
+}
+.contact-page__radio{
+    display:block;
+    position: relative;
+    padding-left: rem(22);
+}
+.contact-page__radio:before{
+    content: "";
+    display:inline-block;
+    width: 14px;
+    width: rem(14);
+    height: rem(14);
+    border: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-page__message{
+    width: 100%;
+    margin-top: rem(16);
+    border:  1px solid;
+    @include mq(md) {
+        width: calc(480 / 700 * 100%);
+        height: rem(200);
+    }
+}
+.input[type="radio"]:checked + .contact-page__radio {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* 選択されたラベルにカスタムマーク（例: チェックマーク）を追加 */
+  input[type="radio"]:checked + .contact-page__radio::after {
+      content: "✔";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+  }
+  .contact-page__select {
+    -webkit-appearance: none; /* Chrome, Safari, Opera用のデフォルトの外見を無効に */
+    -moz-appearance: none; /* Firefox用のデフォルトの外見を無効に */
+    appearance: none; /* 標準の外見を無効に */
+    padding: 8px;
+    border: 1px solid black; /* 黒い線で囲む */
+    border-radius: 5px; /* 角を丸める */
+    width: 100%;
+    margin-top: rem(16);
+    @include mq(md) {
+        width: calc(480 / 700 * 100%);
+        margin-top: 0;
+    }
+  }
+.select-body::after {
+    content: '▼';
+    position: absolute;
+    top: 55%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* クリックを`select`に通す */
+    font-size: 12px;
+    color: black;
+    @include mq(md) {
+        top: 35%;
+    }
+  }
+  
+  .contact-page__checkbox {
+    margin-right: 10px; /* ラベルとの間隔 */
+  }
+  
+  .contact-page__label {
+    cursor: pointer; /* ホバー時にポインターを表示 */
+  }
+  .contact-page__btn{
+    margin-top: rem(24);
+  }
+  .contact-page__labelPrivacy{
+    position: relative;
+    padding-left:rem(32);
+    text-align: left;
+    display:flex;
+    justify-content: center;
+    font-size: rem(14);
+    
+  }
+  .contact-page__labelPrivacy:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translateY(-50%);
+    display:inline-block;
+    width: rem(22);
+    height: rem(22);
+    border: 1px solid #408F95;
+  }
+  .contact-page__privacyBody {
+    display: flex;
+    align-items: start; /* ラベルが複数行にわたる場合の整列を保持 */
+    margin-bottom: 15px; /* 適宜調整 */
+  }
+  
+  .contact-page__privacy {
+    margin-right: 10px; /* ラベルとの間隔 */
+  }
+  
+  .contact-page__labelPrivacy {
+    cursor: pointer; /* ラベルにマウスを合わせた際のカーソル変更 */
+  }
+  .contact-page__privacyArea {
+    position: relative;
+    margin-top: rem(40);
+    display:inline-block;
+  }
+  
+  .contact-page__labelPrivacy + .contact-page__labelPrivacy::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .contact-page__privacy:checked + .contact-page__labelPrivacy::after {
+    content: "✔"; /* チェックマークを表示 */
+    display: block;
+    left: rem(5);
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }

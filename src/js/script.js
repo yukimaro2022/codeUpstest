@@ -32,6 +32,16 @@ jQuery('.drawer__btns').on('click',function(){
     });
   });
 
+  jQuery(function(){
+    const swiper__top= new Swiper('.js-voice-swiper', {
+      effect: 'fade',
+      direction: 'horizontal',
+      loop: true,
+      autoplay: {
+        delay: 3000, // ミリ秒単位で自動再生の間隔を指定
+      },
+    });
+  });
 
   jQuery(function(){
     
@@ -230,4 +240,84 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+  // 画像をクリックするとモーダルを開く
+  $('.gallery__img img').click(function() {
+      $('#modalImg').attr('src', $(this).attr('src')); // クリックされた画像のsrcをモーダルの<img>に設定
+      $('#myModal').show(); // モーダルを表示
+      $('body').css('overflow', 'hidden'); // モーダル表示中はbodyのスクロールを無効にする
+  });
+
+  // クローズボタンまたはモーダルの外側をクリックするとモーダルを閉じる
+  function closeModal() {
+      $('#myModal').hide(); // モーダルを非表示
+      $('body').css('overflow', ''); // bodyのスクロールを再び有効にする
+  }
+
+  $('.close').click(function() {
+      closeModal(); // モーダルを閉じる
+  });
+
+  $(window).click(function(e) {
+      if ($(e.target).is('#myModal')) {
+          closeModal(); // モーダルを閉じる
+      }
+  });
 });
+// コンタクトフォーム
+    document.getElementById('campaign').addEventListener('change', function() {
+        var content = document.querySelector('.toggle-content');
+        if(this.checked) {
+            content.classList.add('active');
+        } else {
+            content.classList.remove('active');
+        }
+    });
+
+});
+$('#submitLink').click(function(e) {
+  e.preventDefault(); // デフォルトの動作を防止
+
+  // エラーメッセージとエラースタイルをクリア
+  $('.error-message').hide();
+  $('.contact-page__wrapper input, .contact-page__wrapper textarea').css('background-color', ''); // エラースタイルをリセット
+
+  // 名前の入力チェック
+  if ($('#name').val().trim() === '') {
+      $('#name').css('background-color', '#ffcccc'); // エラーがあるフィールドの背景色を赤色に変更
+      $('#name-error-message').html('※必須項目が入力されていません。<br class="u-mobile">入力してください。').show();
+      return; // 他のフィールドのチェックを停止
+  }
+
+  // メールアドレスの入力チェック
+  if ($('#email').val().trim() === '') {
+      $('#email').css('background-color', '#ffcccc');
+      $('#email-error-message').html('※必須項目が入力されていません。<br>入力してください。').show();
+      return; // 他のフィールドのチェックを停止
+  }
+
+  // 電話番号の入力チェック
+  if ($('#phone').val().trim() === '') {
+      $('#phone').css('background-color', '#ffcccc');
+      $('#phone-error-message').html('※必須項目が入力されていません。<br>入力してください。').show();
+      return; // 他のフィールドのチェックを停止
+  }
+
+  // お問い合わせ内容の入力チェック
+  if ($('#message').val().trim() === '') {
+      $('#message').css('background-color', '#ffcccc');
+      $('#message-error-message').html('※必須項目が入力されていません。<br>入力してください。').show();
+      return; // 他のフィールドのチェックを停止
+  }
+
+  // ラジオボタン（お問い合わせ項目）のチェック
+  if (!$('input[name="interest"]:checked').length) {
+      // ラジオボタンに背景色を直接適用することはできないため、
+      // エラーメッセージや別の視覚的フィードバックを提供する
+      $('#interest-error-message').html('※お問い合わせ項目が選択されていません。<br>選択してください。').show();
+      return; // 他のフィールドのチェックを停止
+  }
+});
+
+
+

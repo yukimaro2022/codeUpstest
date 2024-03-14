@@ -63,6 +63,9 @@
         height: rem(64);
     }
 }
+.campaign-nav__item--sizeBig.campaign-nav__item .is-active span:before{
+    background-image: url("../images/common/sp-img/diving/diving-syousai-img.webp");
+}
 .campaign-nav__item a{
     max-width: 100%;
     width: rem(106);
