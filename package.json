@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "gulp": "^5.0.0",
     "picturefill": "^3.0.3"
   }
 }
